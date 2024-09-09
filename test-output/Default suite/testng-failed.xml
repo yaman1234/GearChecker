@@ -6,8 +6,7 @@
       <class name="tests.SmokeTest">
         <methods>
           <include name="teardown"/>
-          <include name="loginTest_invalidCredentials"/>
-          <include name="loginTest_validCredentials"/>
+          <include name="createActivity_test"/>
           <include name="setup"/>
         </methods>
       </class> <!-- tests.SmokeTest -->

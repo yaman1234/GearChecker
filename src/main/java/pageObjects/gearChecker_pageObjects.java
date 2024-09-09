@@ -26,15 +26,15 @@ public class gearChecker_pageObjects {
 	
 	
 	/***************************** NAVBAR ***************************/
-	public WebElement link_navbar_gearlist() {
+	public WebElement navbar_link_gearlist() {
 		return WebElementLib.findMyElement("xpath", "//p[normalize-space()='Gear List']");
 	}
 	
-	public WebElement link_navbar_activity() {
+	public WebElement navbar_link_activity() {
 		return WebElementLib.findMyElement("xpath", "//p[normalize-space()='Activity']");
 	}
 	
-	public WebElement link_navbar_adventure() {
+	public WebElement navbar_link_adventure() {
 		return WebElementLib.findMyElement("xpath", "//p[normalize-space()='Adventure']");
 	}
 	
@@ -46,5 +46,37 @@ public class gearChecker_pageObjects {
 	}
 	
 	
+	/***************************** ACTIVITY ***************************/
+	public WebElement activity_toggle_showSubActivities() {
+		return WebElementLib.findMyElement("xpath", "//input[@id='flexSwitchCheckDefault']");
+	}
+	
+	public WebElement activity_button_addActivity() {
+		return WebElementLib.findMyElement("xpath", "//span[normalize-space()='Activity']");
+	}
+	
+	public WebElement activity_input_search() {
+		return WebElementLib.findMyElement("xpath", "//input[contains(@class,'form-control me-2')]");
+	}
+	
+//	create activity
+	public WebElement createActivity_input_name() {
+		return WebElementLib.findMyElement("xpath", "//input[contains(@placeholder,'Enter Name')]");
+	}
+	
+	public WebElement createActivity_button_uploadLogo() {
+		return WebElementLib.findMyElement("xpath", "//div[@class='dotted-box text-gear']");
+	}
+	
+	public WebElement createActivity_button_save() {
+		return WebElementLib.findMyElement("xpath", "//*[@id='form']/div/div[5]/button[2]");
+	}
+	public WebElement createActivity_toggle_isFeatured() {
+		return WebElementLib.findMyElement("xpath", "//input[@id='is_featured']");
+	}
+	// Toaster alert message
+	public WebElement alert_toastMessage() {
+		return WebElementLib.findMyElement("xpath", "//div[@role='alert']");
+	}
 	
 }

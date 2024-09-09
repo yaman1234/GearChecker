@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
+import utilities.RobotClass;
 import utilities.UtilBase;
 import utilities.WebElementLib;
 
@@ -33,7 +34,7 @@ public class SmokeTest extends UtilBase {
 	}
 
 //	Login Test with Invalid Credentials
-	@Test(priority = 1)
+//	@Test(priority = 1)
 	public void loginTest_invalidCredentials() {
 		String testName = "loginTest_invalidCredentials";
 		test = extent.createTest(testName);
@@ -67,8 +68,6 @@ public class SmokeTest extends UtilBase {
 		String testName = "loginTest_validCredentials";
 		test = extent.createTest(testName);
 
-
-
 		try {
 			driver.get(baseURL);
 			pObj.input_email().sendKeys(username);
@@ -88,50 +87,55 @@ public class SmokeTest extends UtilBase {
 		}
 	}
 
-	
-	
-	
-	//GearList check
-		@Test(priority = 3)
-		public void gearlist_test() {
-			String testName = "gearlist_test";
-			test = extent.createTest(testName);
+	// GearList check
+	@Test(priority = 3)
+	public void createActivity_test() {
+		String testName = "createActivity_test";
+		test = extent.createTest(testName);
 
+//			variables
+		String activityName = "bonfire";
+		String logopath = "D:\\gearchecker\\Test Documents\\TestDatas\\tilicho.jpg";
 
+		try {
+			pObj.navbar_link_activity().click();
+			pObj.activity_button_addActivity().click();
+			Thread.sleep(3000);
 
-			try {
-				
+			pObj.createActivity_input_name().sendKeys(activityName);
+			pObj.createActivity_toggle_isFeatured().click();
+			pObj.createActivity_button_uploadLogo().click();
+			Thread.sleep(3000);
 
-			} catch (Exception e) {
-				testException(testName, e);
+			// Copying and pasting file paths into the dialog
+			RobotClass.copyPaste(logopath);
+
+			Thread.sleep(6000);
+			//	scroll into view
+			jsDriver.executeScript("arguments[0].scrollIntoView();", pObj.createActivity_button_save());
+			Thread.sleep(500);
+			pObj.createActivity_button_save().click();
+			Thread.sleep(2000);
+//			check the pass / fail condition [check the toaster message]
+			if (WebElementLib.doesElementExist(pObj.alert_toastMessage())) {
+				String message = pObj.alert_toastMessage().getText();
+				if (message.equals("Activity created successfully!")) {
+					testPassed(testName);
+				}else {
+					testFailed(testName);
+				}
 			}
+
+		} catch (Exception e) {
+			testException(testName, e);
 		}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	}
+
 	@AfterClass
 	public void teardown() {
 		try {
 			extent.flush();
-			driver.close();
+//			driver.close();
 			System.out.println("Closing the browser");
 		} catch (Exception e) {
 			e.printStackTrace();
