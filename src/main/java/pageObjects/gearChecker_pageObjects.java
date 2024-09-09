@@ -25,6 +25,21 @@ public class gearChecker_pageObjects {
 	}
 	
 	
+	/***************************** NAVBAR ***************************/
+	public WebElement link_navbar_gearlist() {
+		return WebElementLib.findMyElement("xpath", "//p[normalize-space()='Gear List']");
+	}
+	
+	public WebElement link_navbar_activity() {
+		return WebElementLib.findMyElement("xpath", "//p[normalize-space()='Activity']");
+	}
+	
+	public WebElement link_navbar_adventure() {
+		return WebElementLib.findMyElement("xpath", "//p[normalize-space()='Adventure']");
+	}
+	
+	
+	
 	/***************************** DASHBOARD ***************************/
 	public WebElement link_dashboard_gearchecker() {
 		return WebElementLib.findMyElement("xpath", "//p[normalize-space()='gearchecker']");
