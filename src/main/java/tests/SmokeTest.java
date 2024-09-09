@@ -1,5 +1,8 @@
 package tests;
 
+import java.util.List;
+
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -17,6 +20,10 @@ public class SmokeTest extends UtilBase {
 	final String baseURL = "https://uat.gearchecker.io/";
 	final String username = "superadmin@gearchecker.test";
 	final String password = "12345678";
+//	ACTIVITIES
+//	variables
+	String activityName = "bonfire67";
+	String logopath = "D:\\gearchecker\\Test Documents\\TestDatas\\tilicho.jpg";
 
 	@BeforeClass
 	public void setup() {
@@ -87,15 +94,11 @@ public class SmokeTest extends UtilBase {
 		}
 	}
 
-	// GearList check
+	// Add New Activity
 	@Test(priority = 3)
-	public void createActivity_test() {
-		String testName = "createActivity_test";
+	public void activity_createActivity() {
+		String testName = "activity_createActivity";
 		test = extent.createTest(testName);
-
-//			variables
-		String activityName = "bonfire";
-		String logopath = "D:\\gearchecker\\Test Documents\\TestDatas\\tilicho.jpg";
 
 		try {
 			pObj.navbar_link_activity().click();
@@ -107,11 +110,11 @@ public class SmokeTest extends UtilBase {
 			pObj.createActivity_button_uploadLogo().click();
 			Thread.sleep(3000);
 
-			// Copying and pasting file paths into the dialog
+			// Copying and pasting file paths into the dialog for file upload
 			RobotClass.copyPaste(logopath);
 
 			Thread.sleep(6000);
-			//	scroll into view
+			// scroll into view
 			jsDriver.executeScript("arguments[0].scrollIntoView();", pObj.createActivity_button_save());
 			Thread.sleep(500);
 			pObj.createActivity_button_save().click();
@@ -121,9 +124,67 @@ public class SmokeTest extends UtilBase {
 				String message = pObj.alert_toastMessage().getText();
 				if (message.equals("Activity created successfully!")) {
 					testPassed(testName);
-				}else {
+				} else {
 					testFailed(testName);
 				}
+			}
+//			check the pass / fail condition [search the added activity]
+			List<WebElement> activitiesFound = activity_searchActivity(activityName);
+			
+			if (activitiesFound.size() > 0) {
+				System.out.println("Activity Found");
+				WebElement element = activitiesFound.get(0);
+				element.click();
+				Thread.sleep(2000);
+				testPassed(testName);
+			}else if (WebElementLib.doesElementExist(pObj.activity_search_notFound())) {
+				System.out.println("Activity Not Found");
+				testFailed(testName);
+			}
+		} catch (Exception e) {
+			testException(testName, e);
+		}
+	}
+
+//	sample method
+//	@Test(priority = 4)
+	public List<WebElement> activity_searchActivity(String searchItem) {
+		List<WebElement> activitiesFound = null;
+//		String testName = "activity_searchActivity";
+//		test = extent.createTest(testName);
+//		VARIABLES
+//		String searchItem = "Ice Mixed Climbing";
+		
+		try {
+			pObj.navbar_link_activity().click();
+			pObj.activity_input_search().sendKeys(searchItem);
+			Thread.sleep(2000);
+			activitiesFound =  pObj.activity_search_list();
+
+			
+//			System.out.println(activitiesFound.size());
+//			for(int i = 0; i < activitiesFound.size(); i++) {
+//				System.out.println(activitiesFound.get(i).getText());;
+//			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return activitiesFound;
+	}
+
+//		sample method
+//		@Test(priority = 999)
+	public void sampleTest() {
+		String testName = "sampleTest";
+		test = extent.createTest(testName);
+
+		try {
+//				pass condition
+			if (WebElementLib.doesElementExist(pObj.link_dashboard_gearchecker())) {
+				testPassed(testName);
+			} else {
+				testFailed(testName);
 			}
 
 		} catch (Exception e) {

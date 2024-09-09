@@ -1,5 +1,7 @@
 package pageObjects;
 
+import java.util.List;
+
 import org.openqa.selenium.WebElement;
 
 import utilities.WebElementLib;
@@ -55,8 +57,17 @@ public class gearChecker_pageObjects {
 		return WebElementLib.findMyElement("xpath", "//span[normalize-space()='Activity']");
 	}
 	
+//	search activity
 	public WebElement activity_input_search() {
 		return WebElementLib.findMyElement("xpath", "//input[contains(@class,'form-control me-2')]");
+	}
+	
+	public WebElement activity_search_notFound() {
+		return WebElementLib.findMyElement("xpath", "//span[normalize-space()='No activities available']");
+	}
+	
+	public List<WebElement> activity_search_list() {
+		return WebElementLib.findMyElements("xpath", "//body[1]/div[1]/div[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/ul[1]/li");
 	}
 	
 //	create activity
@@ -78,5 +89,6 @@ public class gearChecker_pageObjects {
 	public WebElement alert_toastMessage() {
 		return WebElementLib.findMyElement("xpath", "//div[@role='alert']");
 	}
+	
 	
 }

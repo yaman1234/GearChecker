@@ -2,8 +2,8 @@
 # /path/to/file.txt
 
 # Ignore a directory and all its contents
-/test-output/
 /screenshots/
+/test-output/
 
 # Ignore all .png files
 # *.png
