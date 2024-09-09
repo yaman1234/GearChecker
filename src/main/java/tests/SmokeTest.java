@@ -88,6 +88,45 @@ public class SmokeTest extends UtilBase {
 		}
 	}
 
+	
+	
+	
+	//GearList check
+		@Test(priority = 3)
+		public void gearlist_test() {
+			String testName = "gearlist_test";
+			test = extent.createTest(testName);
+
+
+
+			try {
+				
+
+			} catch (Exception e) {
+				testException(testName, e);
+			}
+		}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	@AfterClass
 	public void teardown() {
 		try {
