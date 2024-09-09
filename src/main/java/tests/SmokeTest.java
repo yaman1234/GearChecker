@@ -22,7 +22,7 @@ public class SmokeTest extends UtilBase {
 	final String password = "12345678";
 //	ACTIVITIES
 //	variables
-	String activityName = "bonfire67";
+	String activityName = "bonfire";
 	String logopath = "D:\\gearchecker\\Test Documents\\TestDatas\\tilicho.jpg";
 
 	@BeforeClass
@@ -95,7 +95,7 @@ public class SmokeTest extends UtilBase {
 	}
 
 	// Add New Activity
-	@Test(priority = 3)
+//	@Test(priority = 3)
 	public void activity_createActivity() {
 		String testName = "activity_createActivity";
 		test = extent.createTest(testName);
@@ -128,8 +128,24 @@ public class SmokeTest extends UtilBase {
 					testFailed(testName);
 				}
 			}
-//			check the pass / fail condition [search the added activity]
-			List<WebElement> activitiesFound = activity_searchActivity(activityName);
+
+		} catch (Exception e) {
+			testException(testName, e);
+		}
+	}
+
+//	sample method
+	@Test(priority = 4)
+	public void activity_searchActivity() {
+		String testName = "activity_searchActivity";
+		test = extent.createTest(testName);
+//		VARIABLES
+		String searchItem = "Ice Mixed Climbing";
+		try {
+			pObj.navbar_link_activity().click();
+			pObj.activity_input_search().sendKeys(searchItem);
+			Thread.sleep(2000);
+			List<WebElement> activitiesFound =  pObj.activity_search_list();
 			
 			if (activitiesFound.size() > 0) {
 				System.out.println("Activity Found");
@@ -141,36 +157,15 @@ public class SmokeTest extends UtilBase {
 				System.out.println("Activity Not Found");
 				testFailed(testName);
 			}
+			
+			System.out.println(activitiesFound.size());
+			for(int i = 0; i < activitiesFound.size(); i++) {
+				System.out.println(activitiesFound.get(i).getText());;
+			}
+
 		} catch (Exception e) {
 			testException(testName, e);
 		}
-	}
-
-//	sample method
-//	@Test(priority = 4)
-	public List<WebElement> activity_searchActivity(String searchItem) {
-		List<WebElement> activitiesFound = null;
-//		String testName = "activity_searchActivity";
-//		test = extent.createTest(testName);
-//		VARIABLES
-//		String searchItem = "Ice Mixed Climbing";
-		
-		try {
-			pObj.navbar_link_activity().click();
-			pObj.activity_input_search().sendKeys(searchItem);
-			Thread.sleep(2000);
-			activitiesFound =  pObj.activity_search_list();
-
-			
-//			System.out.println(activitiesFound.size());
-//			for(int i = 0; i < activitiesFound.size(); i++) {
-//				System.out.println(activitiesFound.get(i).getText());;
-//			}
-
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		return activitiesFound;
 	}
 
 //		sample method
