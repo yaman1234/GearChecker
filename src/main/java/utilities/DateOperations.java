@@ -1,6 +1,7 @@
 package utilities;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
@@ -17,6 +18,14 @@ import org.openqa.selenium.WebElement;
  *
  */
 public class DateOperations extends UtilBase {
+	
+	
+	public static String getCurrentTimestamp() {
+		
+		  LocalDateTime now = LocalDateTime.now();
+	        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMdd HHmmss");
+	        return now.format(formatter);
+	}
 
 	public static String getCurrentDate() {
 		LocalDate today = LocalDate.now();

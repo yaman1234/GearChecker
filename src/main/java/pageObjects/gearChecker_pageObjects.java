@@ -57,6 +57,18 @@ public class gearChecker_pageObjects {
 		return WebElementLib.findMyElement("xpath", "//span[normalize-space()='Activity']");
 	}
 	
+	public WebElement activity_button_addSubactivity() {
+		return WebElementLib.findMyElement("xpath", "//span[normalize-space()='Subactivity']");
+	}
+	
+	public WebElement activity_button_delete() {
+		return WebElementLib.findMyElement("xpath", "//span[normalize-space()='Delete']");
+	}
+	public WebElement activity_button_update() {
+		return WebElementLib.findMyElement("xpath", "//span[normalize-space()='Update']");
+	}
+	
+	
 //	search activity
 	public WebElement activity_input_search() {
 		return WebElementLib.findMyElement("xpath", "//input[contains(@class,'form-control me-2')]");
@@ -67,7 +79,7 @@ public class gearChecker_pageObjects {
 	}
 	
 	public List<WebElement> activity_search_list() {
-		return WebElementLib.findMyElements("xpath", "//body[1]/div[1]/div[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/ul[1]/li");
+		return WebElementLib.findMyElements("xpath", "//span[@class='parent text-gear']");
 	}
 	
 //	create activity
@@ -78,13 +90,18 @@ public class gearChecker_pageObjects {
 	public WebElement createActivity_button_uploadLogo() {
 		return WebElementLib.findMyElement("xpath", "//div[@class='dotted-box text-gear']");
 	}
+	public WebElement createActivity_toggle_isFeatured() {
+		return WebElementLib.findMyElement("xpath", "//input[@id='is_featured']");
+	}
 	
 	public WebElement createActivity_button_save() {
 		return WebElementLib.findMyElement("xpath", "//*[@id='form']/div/div[5]/button[2]");
 	}
-	public WebElement createActivity_toggle_isFeatured() {
-		return WebElementLib.findMyElement("xpath", "//input[@id='is_featured']");
+//	XPATH FOR THE SAVE BUTTON FOR SUB-ACTIVITY IS DIFFERENT
+	public WebElement createSubActivity_button_save() {
+		return WebElementLib.findMyElement("xpath", "//*[@id='form']/div/div[4]/button[2]");
 	}
+
 	// Toaster alert message
 	public WebElement alert_toastMessage() {
 		return WebElementLib.findMyElement("xpath", "//div[@role='alert']");

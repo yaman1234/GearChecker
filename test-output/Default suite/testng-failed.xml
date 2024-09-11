@@ -6,8 +6,8 @@
       <class name="tests.SmokeTest">
         <methods>
           <include name="teardown"/>
-          <include name="createActivity_test"/>
           <include name="setup"/>
+          <include name="activity_deleteActivity"/>
         </methods>
       </class> <!-- tests.SmokeTest -->
     </classes>

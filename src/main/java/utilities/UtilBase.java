@@ -2,6 +2,7 @@ package utilities;
 
 import java.io.File;
 import java.io.IOException;
+import java.time.Duration;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.JavascriptExecutor;
@@ -28,14 +29,13 @@ public class UtilBase {
 	protected static Actions actions = null;
 	protected static JavascriptExecutor jsDriver = null;
 
-
 //	Reporting
 	protected static ExtentReports extent;
 	protected static ExtentTest test;
 
 //	global vairables
-	protected gearChecker_pageObjects pObj = new gearChecker_pageObjects(); 
-	
+	protected gearChecker_pageObjects pObj = new gearChecker_pageObjects();
+
 //	wait
 	protected static WaitUntil wait = null;
 
@@ -59,16 +59,17 @@ public class UtilBase {
 		}
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		
+
 //		Actions class is an ability provided by Selenium for handling keyboard and mouse events.
 		actions = new Actions(driver);
 //		JavaScriptExecutor is an interface that provides a mechanism to execute Javascript through selenium driver.
 		jsDriver = (JavascriptExecutor) driver;
 //		wait
 		wait = new WaitUntil();
+
+		  // Apply implicit wait with Duration
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
-
-
 
 	/**
 	 * Captures screenshot of the current window of the browser driver
@@ -79,7 +80,7 @@ public class UtilBase {
 	protected String capture(String screenShotName) {
 
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		String screenshotPath = "screenshots//" + screenShotName + System.currentTimeMillis() + ".png";
+		String screenshotPath = "screenshots//" + screenShotName + DateOperations.getCurrentTimestamp() + ".png";
 		try {
 			FileUtils.copyFile(scrFile, new File(screenshotPath));
 		} catch (IOException e) {
@@ -93,8 +94,6 @@ public class UtilBase {
 		return new File(screenshotPath).getAbsolutePath();
 	}
 
-
-
 	public void testPassed(String testname) {
 		test.pass("PASS :: " + testname);
 		test.addScreenCaptureFromPath(capture(testname));
@@ -106,13 +105,11 @@ public class UtilBase {
 		test.addScreenCaptureFromPath(capture(testname));
 		Assert.assertTrue(false);
 	}
-	
+
 	public void testException(String testname, Exception e) {
-		test.fail("EXCEPTION :: " + testname);
+		test.fail("EXCEPTION :: " + testname + "\n" + e);
 		test.addScreenCaptureFromPath(capture(testname));
 		Assert.assertTrue(false);
 	}
-
-
 
 }

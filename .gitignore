@@ -6,8 +6,9 @@
 /test-output/
 
 # Ignore all .png files
-# *.png
-# *.xml
+*.png
+*.xml
 *.html
 # Ignore specific file types in a directory
+# /target/
 /target/

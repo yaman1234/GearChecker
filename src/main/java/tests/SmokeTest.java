@@ -2,6 +2,7 @@ package tests;
 
 import java.util.List;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -10,6 +11,7 @@ import org.testng.annotations.Test;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
+import utilities.DateOperations;
 import utilities.RobotClass;
 import utilities.UtilBase;
 import utilities.WebElementLib;
@@ -22,8 +24,14 @@ public class SmokeTest extends UtilBase {
 	final String password = "12345678";
 //	ACTIVITIES
 //	variables
-	String activityName = "bonfire";
-	String logopath = "D:\\gearchecker\\Test Documents\\TestDatas\\tilicho.jpg";
+	String activityName = "Test Acitivity " + DateOperations.getCurrentTimestamp();
+	String subActivityName = "Test Sub Acitivity " + DateOperations.getCurrentTimestamp();
+	String logopath = "C:\\Users\\yamah022\\Desktop\\eclipse\\new-selenium-workspace\\gearchecker\\testdata\\photos\\test.png";
+//GLOBAL VARIABLES
+	List<WebElement> gvlist_searchActivity;
+//	TOAST MESSAGE
+	String alert_success_created = "Activity created successfully!";
+	String alert_success_deleted = "Activity deleted successfully!";
 
 	@BeforeClass
 	public void setup() {
@@ -95,7 +103,7 @@ public class SmokeTest extends UtilBase {
 	}
 
 	// Add New Activity
-//	@Test(priority = 3)
+	@Test(priority = 3)
 	public void activity_createActivity() {
 		String testName = "activity_createActivity";
 		test = extent.createTest(testName);
@@ -113,16 +121,21 @@ public class SmokeTest extends UtilBase {
 			// Copying and pasting file paths into the dialog for file upload
 			RobotClass.copyPaste(logopath);
 
-			Thread.sleep(6000);
+			Thread.sleep(9000);
 			// scroll into view
 			jsDriver.executeScript("arguments[0].scrollIntoView();", pObj.createActivity_button_save());
 			Thread.sleep(500);
 			pObj.createActivity_button_save().click();
 			Thread.sleep(2000);
+
+			/*
+			 * HANDLE :: The name has already been taken.
+			 */
+
 //			check the pass / fail condition [check the toaster message]
 			if (WebElementLib.doesElementExist(pObj.alert_toastMessage())) {
 				String message = pObj.alert_toastMessage().getText();
-				if (message.equals("Activity created successfully!")) {
+				if (message.equals(alert_success_created)) {
 					testPassed(testName);
 				} else {
 					testFailed(testName);
@@ -134,33 +147,131 @@ public class SmokeTest extends UtilBase {
 		}
 	}
 
-//	sample method
+//	SEARCH ACTIVITY
 	@Test(priority = 4)
 	public void activity_searchActivity() {
 		String testName = "activity_searchActivity";
 		test = extent.createTest(testName);
 //		VARIABLES
-		String searchItem = "Ice Mixed Climbing";
+		String searchItem = activityName;
 		try {
 			pObj.navbar_link_activity().click();
 			pObj.activity_input_search().sendKeys(searchItem);
-			Thread.sleep(2000);
-			List<WebElement> activitiesFound =  pObj.activity_search_list();
-			
-			if (activitiesFound.size() > 0) {
+
+			Thread.sleep(3000);
+			gvlist_searchActivity = pObj.activity_search_list();
+
+			if (gvlist_searchActivity.size() > 0) {
 				System.out.println("Activity Found");
-				WebElement element = activitiesFound.get(0);
+				WebElement element = gvlist_searchActivity.get(0);
 				element.click();
 				Thread.sleep(2000);
 				testPassed(testName);
-			}else if (WebElementLib.doesElementExist(pObj.activity_search_notFound())) {
+			} else if (WebElementLib.doesElementExist(pObj.activity_search_notFound())) {
 				System.out.println("Activity Not Found");
 				testFailed(testName);
 			}
+
+//			System.out.println(activitiesFound.size());
+//			for(int i = 0; i < activitiesFound.size(); i++) {
+//				System.out.println(activitiesFound.get(i).getText());;
+//			}
+
+		} catch (Exception e) {
+			testException(testName, e);
+		}
+	}
+
+//	CREATE SUBACTIVITY
+	@Test(priority = 5)
+	public void activity_createSubActivity() {
+		String testName = "activity_createSubActivity";
+		test = extent.createTest(testName);
+
+		try {
+
+//			ENABLE THE SHOW SUB-ACTIVITIES TOGGLE
+			pObj.activity_toggle_showSubActivities().click();
+
+//			CLICK ADD SUB-ACTIVITY BUTTON
+			pObj.activity_button_addSubactivity().click();
+			Thread.sleep(2000);
+
+//			CREATE SUB-ACTIVITY
+			Thread.sleep(3000);
+
+			pObj.createActivity_input_name().sendKeys(subActivityName);
+			pObj.createActivity_button_uploadLogo().click();
+			Thread.sleep(3000);
+
+			// Copying and pasting file paths into the dialog for file upload
+			RobotClass.copyPaste(logopath);
+
+			Thread.sleep(9000);
+			// scroll into view
+			jsDriver.executeScript("arguments[0].scrollIntoView();", pObj.createSubActivity_button_save());
+			Thread.sleep(500);
+			pObj.createSubActivity_button_save().click();
+			Thread.sleep(2000);
+
+			/*
+			 * HANDLE :: The name has already been taken.
+			 */
+
+//			check the pass / fail condition [check the toaster message]
+			if (WebElementLib.doesElementExist(pObj.alert_toastMessage())) {
+				String message = pObj.alert_toastMessage().getText();
+				if (message.equals(alert_success_created)) {
+					testPassed(testName);
+				} else {
+					testFailed(testName);
+				}
+			}
+
+		} catch (Exception e) {
+			testException(testName, e);
+		}
+	}
+
+//	DELETE ACTIVITY
+	@Test(priority = 7)
+	public void activity_deleteActivity() {
+		String testName = "activity_deleteActivity";
+		test = extent.createTest(testName);
+
+		try {
+
+//			CLICK THE ACTIVITY
+			WebElement element = gvlist_searchActivity.get(0);
+			element.click();
+			Thread.sleep(2000);
+
+//			CLICK DELETE BUTTON
+//			System.out.println(activitiesFound.size());
+//			for(int i = 0; i < activitiesFound.size(); i++) {
+//				System.out.println(activitiesFound.get(i).getText());;
+//			}
+			pObj.activity_button_delete().click();
+//			HANDLE THE JAVASCRIPT ALERT
+			// Store the alert in a variable
+			Alert alert = driver.switchTo().alert();
 			
-			System.out.println(activitiesFound.size());
-			for(int i = 0; i < activitiesFound.size(); i++) {
-				System.out.println(activitiesFound.get(i).getText());;
+
+			// Store the alert in a variable for reuse
+			String text = alert.getText();
+			System.out.println("Alert Text: " +text);
+
+			// Press the Ok button
+			alert.accept();
+
+			// check the pass / fail condition [check the toaster message]
+			if (WebElementLib.doesElementExist(pObj.alert_toastMessage())) {
+				String message = pObj.alert_toastMessage().getText();
+				if (message.equals(alert_success_deleted)) {
+					testPassed(testName);
+				} else {
+					testFailed(testName);
+				}
 			}
 
 		} catch (Exception e) {

@@ -1,25 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-10T00:01:08 NPT" name="Default suite" finished-at="2024-09-10T00:01:41 NPT" duration-ms="32094">
+  <suite started-at="2024-09-12T00:23:16 NPT" name="Default suite" finished-at="2024-09-12T00:24:36 NPT" duration-ms="79857">
     <groups>
     </groups>
-    <test started-at="2024-09-10T00:01:08 NPT" name="Default test" finished-at="2024-09-10T00:01:41 NPT" duration-ms="32094">
+    <test started-at="2024-09-12T00:23:16 NPT" name="Default test" finished-at="2024-09-12T00:24:36 NPT" duration-ms="79857">
       <class name="tests.SmokeTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.SmokeTest@3b366632]" started-at="2024-09-10T00:01:09 NPT" name="setup" finished-at="2024-09-10T00:01:14 NPT" duration-ms="5910" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.SmokeTest@4628b1d3]" started-at="2024-09-12T00:23:16 NPT" name="setup" finished-at="2024-09-12T00:23:22 NPT" duration-ms="5810" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTest_validCredentials()[pri:2, instance:tests.SmokeTest@3b366632]" started-at="2024-09-10T00:01:14 NPT" name="loginTest_validCredentials" finished-at="2024-09-10T00:01:29 NPT" duration-ms="14715" status="PASS">
+        <test-method signature="loginTest_validCredentials()[pri:2, instance:tests.SmokeTest@4628b1d3]" started-at="2024-09-12T00:23:22 NPT" name="loginTest_validCredentials" finished-at="2024-09-12T00:23:36 NPT" duration-ms="13963" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest_validCredentials -->
-        <test-method signature="activity_searchActivity()[pri:4, instance:tests.SmokeTest@3b366632]" started-at="2024-09-10T00:01:29 NPT" name="activity_searchActivity" finished-at="2024-09-10T00:01:39 NPT" duration-ms="10122" status="PASS">
+        <test-method signature="activity_createActivity()[pri:3, instance:tests.SmokeTest@4628b1d3]" started-at="2024-09-12T00:23:36 NPT" name="activity_createActivity" finished-at="2024-09-12T00:24:00 NPT" duration-ms="24012" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- activity_createActivity -->
+        <test-method signature="activity_searchActivity()[pri:4, instance:tests.SmokeTest@4628b1d3]" started-at="2024-09-12T00:24:00 NPT" name="activity_searchActivity" finished-at="2024-09-12T00:24:09 NPT" duration-ms="9708" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- activity_searchActivity -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.SmokeTest@3b366632]" started-at="2024-09-10T00:01:39 NPT" name="teardown" finished-at="2024-09-10T00:01:41 NPT" duration-ms="1231" status="PASS">
+        <test-method signature="activity_createSubActivity()[pri:5, instance:tests.SmokeTest@4628b1d3]" started-at="2024-09-12T00:24:09 NPT" name="activity_createSubActivity" finished-at="2024-09-12T00:24:31 NPT" duration-ms="21273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- activity_createSubActivity -->
+        <test-method signature="activity_deleteActivity()[pri:7, instance:tests.SmokeTest@4628b1d3]" started-at="2024-09-12T00:24:31 NPT" name="activity_deleteActivity" finished-at="2024-09-12T00:24:35 NPT" duration-ms="3770" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- activity_deleteActivity -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.SmokeTest@4628b1d3]" started-at="2024-09-12T00:24:35 NPT" name="teardown" finished-at="2024-09-12T00:24:36 NPT" duration-ms="1186" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
