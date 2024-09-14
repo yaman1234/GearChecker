@@ -7,7 +7,7 @@
         <methods>
           <include name="teardown"/>
           <include name="setup"/>
-          <include name="activity_deleteActivity"/>
+          <include name="adventure_viewAdventure"/>
         </methods>
       </class> <!-- tests.SmokeTest -->
     </classes>

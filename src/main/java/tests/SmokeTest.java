@@ -3,6 +3,7 @@ package tests;
 import java.util.List;
 
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -27,8 +28,21 @@ public class SmokeTest extends UtilBase {
 	String activityName = "Test Acitivity " + DateOperations.getCurrentTimestamp();
 	String subActivityName = "Test Sub Acitivity " + DateOperations.getCurrentTimestamp();
 	String logopath = "C:\\Users\\yamah022\\Desktop\\eclipse\\new-selenium-workspace\\gearchecker\\testdata\\photos\\test.png";
+
+//	VARIABLES FOR ADVENTURE
+	String adventureName = "Test Adventure " + DateOperations.getCurrentTimestamp();
+	String[] activities = { "Biking", "Bonfire", "Fishing" };
+	String country = "Nepal";
+	String tag = "Nepal Adventure Hiking";
+	String duration = "5";
+	String latittude = "19.3425";
+	String longitude = "20.5578";
+	String description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.";
+	String addBlogLink = "https://theworldtravelguy.com/ternate-indonesia-island/";
+	String youtubeLink = "https://www.youtube.com/watch?v=TokXb-Mpc4k";
 //GLOBAL VARIABLES
-	List<WebElement> gvlist_searchActivity;
+	List<WebElement> list_searchActivity;
+	List<WebElement> list_searchAdventure;
 //	TOAST MESSAGE
 	String alert_success_created = "Activity created successfully!";
 	String alert_success_deleted = "Activity deleted successfully!";
@@ -49,7 +63,7 @@ public class SmokeTest extends UtilBase {
 	}
 
 //	Login Test with Invalid Credentials
-//	@Test(priority = 1)
+	@Test(priority = 1)
 	public void loginTest_invalidCredentials() {
 		String testName = "loginTest_invalidCredentials";
 		test = extent.createTest(testName);
@@ -159,11 +173,11 @@ public class SmokeTest extends UtilBase {
 			pObj.activity_input_search().sendKeys(searchItem);
 
 			Thread.sleep(3000);
-			gvlist_searchActivity = pObj.activity_search_list();
+			list_searchActivity = pObj.activity_search_list();
 
-			if (gvlist_searchActivity.size() > 0) {
+			if (list_searchActivity.size() > 0) {
 				System.out.println("Activity Found");
-				WebElement element = gvlist_searchActivity.get(0);
+				WebElement element = list_searchActivity.get(0);
 				element.click();
 				Thread.sleep(2000);
 				testPassed(testName);
@@ -242,7 +256,7 @@ public class SmokeTest extends UtilBase {
 		try {
 
 //			CLICK THE ACTIVITY
-			WebElement element = gvlist_searchActivity.get(0);
+			WebElement element = list_searchActivity.get(0);
 			element.click();
 			Thread.sleep(2000);
 
@@ -255,11 +269,10 @@ public class SmokeTest extends UtilBase {
 //			HANDLE THE JAVASCRIPT ALERT
 			// Store the alert in a variable
 			Alert alert = driver.switchTo().alert();
-			
 
 			// Store the alert in a variable for reuse
 			String text = alert.getText();
-			System.out.println("Alert Text: " +text);
+			System.out.println("Alert Text: " + text);
 
 			// Press the Ok button
 			alert.accept();
@@ -272,6 +285,159 @@ public class SmokeTest extends UtilBase {
 				} else {
 					testFailed(testName);
 				}
+			}
+
+		} catch (Exception e) {
+			testException(testName, e);
+		}
+	}
+
+//	ADVENTURE
+	@Test(priority = 8)
+	public void adventure_createAdventure() {
+		String testName = "adventure_createAdventure";
+		test = extent.createTest(testName);
+
+		try {
+			pObj.navbar_link_adventure().click();
+			pObj.adventure_button_addNew().click();
+			Thread.sleep(3000);
+
+			pObj.createAdventure_toggle_isFeatured().click();
+			pObj.createAdventure_button_uploadLogo().click();
+			Thread.sleep(1000);
+
+			// Copying and pasting file paths into the dialog for file upload
+			RobotClass.copyPaste(logopath);
+
+			Thread.sleep(5000);
+
+//		ENTER NAME
+			pObj.createAdventure_input_name().sendKeys(adventureName);
+
+//		SELECT ACTIVITIES
+
+			System.out.println("activities : " + activities.length);
+			for (int i = 0; i < activities.length; i++) {
+				// scroll into view
+				jsDriver.executeScript("arguments[0].scrollIntoView();", pObj.createAdventure_dropdown_activities());
+				pObj.createAdventure_dropdown_activities().click();
+				System.out.println(activities[i]);
+				pObj.createAdventure_dropdown_activities().sendKeys(activities[i]);
+				Thread.sleep(2000);
+				pObj.createAdventure_dropdown_activities().sendKeys(Keys.ENTER);
+				Thread.sleep(2000);
+
+			}
+
+//		SELECT COUNTRY
+			pObj.createAdventure_dropdown_country().click();
+			pObj.createAdventure_input_country().sendKeys(country);
+			pObj.createAdventure_input_country().sendKeys(Keys.ENTER);
+
+//			ENTER TAG
+			pObj.createAdventure_input_tag().sendKeys(tag);
+//			ENTER DURATION
+			pObj.createAdventure_input_duration().sendKeys(duration);
+//			ENTER LATITUDE
+			pObj.createAdventure_input_latitude().sendKeys(latittude);
+//			ENTER LONGITUDE
+			pObj.createAdventure_input_longitude().sendKeys(longitude);
+//			ENTER DESCRIPTION
+			pObj.createAdventure_textarea_description().sendKeys(description);
+//			ADD BLOG LINKS
+			pObj.createAdventure_button_addBlogLink().click();
+			Thread.sleep(3000);
+			pObj.createAdventure_input_addBlogLink().sendKeys(addBlogLink);
+			pObj.createAdventure_button_populateAddBlogLink().click();
+			Thread.sleep(2000);
+			jsDriver.executeScript("arguments[0].scrollIntoView();", pObj.createAdventure_button_add_BlogLink());
+			pObj.createAdventure_button_add_BlogLink().click();
+			Thread.sleep(3000);
+//			ADD YOUTUBE LINKS
+			pObj.createAdventure_input_youtubeLink().sendKeys(youtubeLink);
+			pObj.createAdventure_button_populateYoutubeLink().click();
+			Thread.sleep(3000);
+
+//			CLICK SAVE CHANGES
+			jsDriver.executeScript("arguments[0].scrollIntoView();", pObj.createAdventure_button_saveChanges());
+			Thread.sleep(1000);
+			pObj.createAdventure_button_saveChanges().click();
+			Thread.sleep(3000);
+			/*
+			 * HANDLE :: The name has already been taken.
+			 */
+			System.out.println(driver.getCurrentUrl());
+
+			if (driver.getCurrentUrl().equals("https://uat.gearchecker.io/admin/adventures")) {
+				testPassed(testName);
+			} else {
+				testFailed(testName);
+			}
+
+//			wait.wait_element_present(pObj.alert_toastMessage());
+////			check the pass / fail condition [check the toaster message]
+//			if (WebElementLib.doesElementExist(pObj.alert_toastMessage())) {
+//				String message = pObj.alert_toastMessage().getText();
+//				if (message.equals("Adventure created successfully!")) {
+//					testPassed(testName);
+//				} else {
+//					testFailed(testName);
+//				}
+//			}
+
+		} catch (Exception e) {
+			testException(testName, e);
+		}
+	}
+
+//	SEARCH ADVENTURE
+	@Test(priority = 9)
+	public void adventure_searchAdventure() {
+		String testName = "adventure_searchAdventure";
+		test = extent.createTest(testName);
+//		adventureName = "Test Adventure 0914 114022";
+		try {
+			pObj.navbar_link_adventure().click();
+			pObj.adventure_input_search().sendKeys(adventureName);
+			Thread.sleep(5000);
+
+			list_searchAdventure = pObj.adventure_search_list();
+			System.out.println(list_searchAdventure);
+			if (list_searchAdventure.size() > 0) {
+				System.out.println("Adventure Found");
+				String lvelement = list_searchAdventure.get(0).getText();
+				System.out.println(lvelement);
+				Thread.sleep(2000);
+				testPassed(testName);
+			} else if (WebElementLib.doesElementExist(pObj.adventure_search_notFound())) {
+				System.out.println("Adventure Not Found");
+				testFailed(testName);
+			}
+
+		} catch (Exception e) {
+			testException(testName, e);
+		}
+	}
+
+//	VIEW ADEVENTURE
+	@Test(priority = 10)
+	public void adventure_viewAdventure() {
+		String testName = "adventure_viewAdventure";
+		test = extent.createTest(testName);
+
+		try {
+
+			pObj.adventure_link_options().click();
+			Thread.sleep(1000);
+			pObj.adventure_link_view().click();
+			Thread.sleep(3000);
+
+//			pass condition
+			if (WebElementLib.doesElementExist(pObj.showAdventure_modal_header())) {
+				testPassed(testName);
+			} else {
+				testFailed(testName);
 			}
 
 		} catch (Exception e) {
