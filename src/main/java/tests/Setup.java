@@ -13,7 +13,8 @@ public class Setup extends UtilBase {
 	public static void setup() {
 		try {
 			initialiseDriver();
-			System.out.println("Initializing the browser");
+			
+//			logger.info("Initializing the browser");
 
 //			Extent Report
 			ExtentSparkReporter spark = new ExtentSparkReporter("testReports/" + "RunnerReport" + ".html");

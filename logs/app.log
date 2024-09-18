@@ -1,0 +1,51 @@
+2024-09-18 17:06:18.366 [main] INFO  WebDriverManager.resolveDriverVersion:1239 - Using chromedriver 128.0.6613.137 (resolved driver for Chrome 128)
+2024-09-18 17:06:18.413 [main] INFO  WebDriverManager.exportDriver:1301 - Exporting webdriver.chrome.driver as C:\Users\yamah022\.cache\selenium\chromedriver\win64\128.0.6613.137\chromedriver.exe
+2024-09-18 17:06:20.670 [main] INFO  LoginTest.beforeClass:19 - Start :: Login Test 
+2024-09-18 17:06:20.688 [main] INFO  LoginTest.afterClass:24 - END :: Login Test 
+2024-09-18 17:06:20.689 [main] INFO  ActivityTest.beforeClass:23 - Start :: ActivityTest 
+2024-09-18 17:06:20.693 [main] INFO  ActivityTest.afterClass:28 - END :: ActivityTest 
+2024-09-18 17:06:20.695 [main] INFO  AdventureTest.beforeClass:20 - Start :: AdventureTest 
+2024-09-18 17:06:20.699 [main] INFO  AdventureTest.afterClass:26 - END :: AdventureTest 
+2024-09-18 17:07:04.858 [main] INFO  WebDriverManager.resolveDriverVersion:1239 - Using chromedriver 128.0.6613.137 (resolved driver for Chrome 128)
+2024-09-18 17:07:04.906 [main] INFO  WebDriverManager.exportDriver:1301 - Exporting webdriver.chrome.driver as C:\Users\yamah022\.cache\selenium\chromedriver\win64\128.0.6613.137\chromedriver.exe
+2024-09-18 17:07:06.934 [main] INFO  LoginTest.beforeClass:19 - Start :: Login Test 
+2024-09-18 17:07:06.951 [main] INFO  LoginTest.afterClass:24 - END :: Login Test 
+2024-09-18 17:07:06.952 [main] INFO  ActivityTest.beforeClass:23 - Start :: ActivityTest 
+2024-09-18 17:07:06.956 [main] INFO  ActivityTest.afterClass:28 - END :: ActivityTest 
+2024-09-18 17:07:06.957 [main] INFO  AdventureTest.beforeClass:20 - Start :: AdventureTest 
+2024-09-18 17:07:06.960 [main] INFO  AdventureTest.afterClass:26 - END :: AdventureTest 
+2024-09-18 17:07:36.221 [main] INFO  WebDriverManager.resolveDriverVersion:1239 - Using chromedriver 128.0.6613.137 (resolved driver for Chrome 128)
+2024-09-18 17:07:36.283 [main] INFO  WebDriverManager.exportDriver:1301 - Exporting webdriver.chrome.driver as C:\Users\yamah022\.cache\selenium\chromedriver\win64\128.0.6613.137\chromedriver.exe
+2024-09-18 17:07:38.551 [main] INFO  LoginTest.beforeClass:19 - Start :: Login Test 
+2024-09-18 17:07:38.567 [main] INFO  LoginTest.afterClass:24 - END :: Login Test 
+2024-09-18 17:07:38.568 [main] INFO  ActivityTest.beforeClass:23 - Start :: ActivityTest 
+2024-09-18 17:07:38.572 [main] INFO  ActivityTest.afterClass:28 - END :: ActivityTest 
+2024-09-18 17:07:38.573 [main] INFO  AdventureTest.beforeClass:20 - Start :: AdventureTest 
+2024-09-18 17:07:38.575 [main] INFO  AdventureTest.afterClass:26 - END :: AdventureTest 
+2024-09-18 17:09:02.086 [main] INFO  WebDriverManager.resolveDriverVersion:1239 - Using chromedriver 128.0.6613.137 (resolved driver for Chrome 128)
+2024-09-18 17:09:02.138 [main] INFO  WebDriverManager.exportDriver:1301 - Exporting webdriver.chrome.driver as C:\Users\yamah022\.cache\selenium\chromedriver\win64\128.0.6613.137\chromedriver.exe
+2024-09-18 17:09:04.330 [main] INFO  LoginTest.beforeClass:19 - Start :: Login Test 
+2024-09-18 17:09:17.550 [main] INFO  LoginTest.testPassed:106 - PASS :: loginTest_invalidCredentials
+2024-09-18 17:09:30.043 [main] INFO  LoginTest.testPassed:106 - PASS :: loginTest_validCredentials
+2024-09-18 17:09:30.046 [main] INFO  LoginTest.afterClass:24 - END :: Login Test 
+2024-09-18 17:09:30.047 [main] INFO  ActivityTest.beforeClass:23 - Start :: ActivityTest 
+2024-09-18 17:09:56.720 [main] INFO  ActivityTest.testPassed:106 - PASS :: activity_createActivity
+2024-09-18 17:10:04.028 [main] INFO  ActivityTest.activity_searchActivity:90 - Activity Found
+2024-09-18 17:10:06.247 [main] INFO  ActivityTest.testPassed:106 - PASS :: activity_searchActivity
+2024-09-18 17:10:26.654 [main] INFO  ActivityTest.testPassed:106 - PASS :: activity_createSubActivity
+2024-09-18 17:10:28.773 [main] INFO  ActivityTest.activity_deleteActivity:186 - Alert Text: Are you sure you want to make changes?
+2024-09-18 17:10:29.957 [main] INFO  ActivityTest.testPassed:106 - PASS :: activity_deleteActivity
+2024-09-18 17:10:29.958 [main] INFO  ActivityTest.afterClass:28 - END :: ActivityTest 
+2024-09-18 17:10:29.959 [main] INFO  AdventureTest.beforeClass:20 - Start :: AdventureTest 
+2024-09-18 17:11:12.616 [main] INFO  AdventureTest.adventure_createAdventure:53 - activities : 3
+2024-09-18 17:11:12.743 [main] INFO  AdventureTest.adventure_createAdventure:58 - Biking
+2024-09-18 17:11:17.048 [main] INFO  AdventureTest.adventure_createAdventure:58 - Bonfire
+2024-09-18 17:11:21.333 [main] INFO  AdventureTest.adventure_createAdventure:58 - Fishing
+2024-09-18 17:11:44.864 [main] INFO  AdventureTest.adventure_createAdventure:103 - https://uat.gearchecker.io/admin/adventures
+2024-09-18 17:11:45.082 [main] INFO  AdventureTest.testPassed:106 - PASS :: adventure_createAdventure
+2024-09-18 17:11:54.385 [main] INFO  AdventureTest.adventure_searchAdventure:139 - [[[ChromeDriver: chrome on windows (cb79158c3b4ac0127832b2aae893d5f2)] -> xpath: //body[1]/div[1]/div[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[4]/div]]
+2024-09-18 17:11:54.386 [main] INFO  AdventureTest.adventure_searchAdventure:141 - Adventure Found
+2024-09-18 17:11:54.405 [main] INFO  AdventureTest.adventure_searchAdventure:143 - Test Adventure...
+2024-09-18 17:11:56.542 [main] INFO  AdventureTest.testPassed:106 - PASS :: adventure_searchAdventure
+2024-09-18 17:12:00.976 [main] INFO  AdventureTest.testPassed:106 - PASS :: adventure_viewAdventure
+2024-09-18 17:12:00.978 [main] INFO  AdventureTest.afterClass:26 - END :: AdventureTest 
