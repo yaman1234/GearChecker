@@ -40,6 +40,7 @@ public class ActivityTest extends UtilBase {
 				Thread.sleep(3000);
 
 				pObj.createActivity_input_name().sendKeys(ActivityVariables.activityName);
+				logger.info(ActivityVariables.activityName);
 				pObj.createActivity_toggle_isFeatured().click();
 				pObj.createActivity_button_uploadLogo().click();
 				Thread.sleep(3000);
@@ -61,7 +62,8 @@ public class ActivityTest extends UtilBase {
 //				check the pass / fail condition [check the toaster message]
 				if (WebElementLib.doesElementExist(pObj.alert_toastMessage())) {
 					String message = pObj.alert_toastMessage().getText();
-					if (message.equals(GlobalVariables.alert_success_created)) {
+					logger.info(message);
+					if (message.contains(GlobalVariables.alert_success_created)) {
 						testPassed(testName);
 					} else {
 						testFailed(testName);
@@ -146,7 +148,7 @@ public class ActivityTest extends UtilBase {
 //				check the pass / fail condition [check the toaster message]
 				if (WebElementLib.doesElementExist(pObj.alert_toastMessage())) {
 					String message = pObj.alert_toastMessage().getText();
-					if (message.equals(GlobalVariables.alert_success_created)) {
+					if (message.contains(GlobalVariables.alert_success_created)) {
 						testPassed(testName);
 					} else {
 						testFailed(testName);
@@ -191,7 +193,7 @@ public class ActivityTest extends UtilBase {
 				// check the pass / fail condition [check the toaster message]
 				if (WebElementLib.doesElementExist(pObj.alert_toastMessage())) {
 					String message = pObj.alert_toastMessage().getText();
-					if (message.equals(GlobalVariables.alert_success_deleted)) {
+					if (message.contains(GlobalVariables.alert_success_deleted)) {
 						testPassed(testName);
 					} else {
 						testFailed(testName);

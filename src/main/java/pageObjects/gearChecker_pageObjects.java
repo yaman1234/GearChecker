@@ -224,5 +224,10 @@ public class gearChecker_pageObjects {
 	public WebElement createAdventure_button_saveChanges() {
 		return WebElementLib.findMyElement("xpath", "//button[@id='disableButton']");
 	}
+//	CLOSE THE SHOW ADVENTURE MODAL
+	public WebElement showAdventure_button_close() {
+		return WebElementLib.findMyElement("xpath", "//button[@aria-label='Close']");
+	}
+	
 
 }

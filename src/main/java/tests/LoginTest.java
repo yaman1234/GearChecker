@@ -35,6 +35,7 @@ public class LoginTest extends UtilBase {
 			driver.get(LoginVariables.baseURL);
 			pObj.input_email().sendKeys(LoginVariables.username_invalid);
 			pObj.input_password().sendKeys(LoginVariables.password_invalid);
+			logger.info(LoginVariables.username_invalid + ", " + LoginVariables.password_invalid);
 			pObj.button_login().click();
 			Thread.sleep(3000);
 
@@ -61,6 +62,7 @@ public class LoginTest extends UtilBase {
 			driver.get(LoginVariables.baseURL);
 			pObj.input_email().sendKeys(LoginVariables.username);
 			pObj.input_password().sendKeys(LoginVariables.password);
+			logger.info(LoginVariables.username + ", " + LoginVariables.password);
 			pObj.button_login().click();
 			Thread.sleep(3000);
 
