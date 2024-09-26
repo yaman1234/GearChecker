@@ -22,6 +22,7 @@ import com.aventstack.extentreports.ExtentTest;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import pageObjects.gearChecker_pageObjects;
+import pageObjects.gearlist_pageObjects;
 
 public class UtilBase {
 
@@ -40,6 +41,7 @@ public class UtilBase {
 
 //	global vairables
 	protected gearChecker_pageObjects pObj = new gearChecker_pageObjects();
+	protected gearlist_pageObjects glObj = new gearlist_pageObjects();
 
 //	wait
 	protected static WaitUntil wait = null;

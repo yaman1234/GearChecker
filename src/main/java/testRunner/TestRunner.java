@@ -4,6 +4,7 @@ import org.testng.TestNG;
 
 import tests.ActivityTest;
 import tests.AdventureTest;
+import tests.GearlistTest;
 import tests.LoginTest;
 import tests.Setup;
 import tests.TearDown;
@@ -19,7 +20,7 @@ public class TestRunner {
 		TestNG testng = new TestNG();
 
 		// Step 3: Specify the test classes to run
-		testng.setTestClasses(new Class[] { LoginTest.class, ActivityTest.class, AdventureTest.class });
+		testng.setTestClasses(new Class[] { LoginTest.class, ActivityTest.class, AdventureTest.class, GearlistTest.class });
 
 		// Step 4: Run the test classes
 		testng.run();

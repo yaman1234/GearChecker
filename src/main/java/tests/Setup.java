@@ -14,8 +14,6 @@ public class Setup extends UtilBase {
 		try {
 			initialiseDriver();
 			
-//			logger.info("Initializing the browser");
-
 //			Extent Report
 			ExtentSparkReporter spark = new ExtentSparkReporter("testReports/" + "RunnerReport" + ".html");
 			extent = new ExtentReports();

@@ -92,12 +92,12 @@ public class gearChecker_pageObjects {
 	}
 
 	public WebElement createActivity_button_save() {
-		return WebElementLib.findMyElement("xpath", "//*[@id='form']/div/div[5]/button[2]");
+		return WebElementLib.findMyElement("xpath", "//span[normalize-space()='Save']");
 	}
 
 //	XPATH FOR THE SAVE BUTTON FOR SUB-ACTIVITY IS DIFFERENT
 	public WebElement createSubActivity_button_save() {
-		return WebElementLib.findMyElement("xpath", "//*[@id='form']/div/div[4]/button[2]");
+		return WebElementLib.findMyElement("xpath", "//span[normalize-space()='Save']");
 	}
 
 	/***************************** TOASTER MESSAGE ***************************/
@@ -230,4 +230,9 @@ public class gearChecker_pageObjects {
 	}
 	
 
+	
+	
+	
+	
+	
 }
