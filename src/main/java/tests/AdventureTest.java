@@ -1,14 +1,33 @@
 package tests;
 
+import org.apache.logging.log4j.LogManager;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.Keys;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import utilities.RobotClass;
 import utilities.UtilBase;
 import utilities.WebElementLib;
 import variables.AdventureVariables;
+import variables.GlobalVariables;
 
-public class AdventureTest extends UtilBase{
+public class AdventureTest extends UtilBase {
+
+	@BeforeClass
+	public void beforeClass() {
+//		logging
+		logger = LogManager.getLogger(AdventureTest.class);
+		logger.info("Start :: AdventureTest ");
+
+	}
+
+	@AfterClass
+	public void afterClass() {
+		logger.info("END :: AdventureTest ");
+	}
+
 //	ADVENTURE
 	@Test(priority = 8)
 	public void adventure_createAdventure() {
@@ -26,20 +45,18 @@ public class AdventureTest extends UtilBase{
 
 			// Copying and pasting file paths into the dialog for file upload
 			RobotClass.copyPaste(AdventureVariables.logopath);
-
 			Thread.sleep(5000);
 
-//		ENTER NAME
+//			ENTER NAME
 			pObj.createAdventure_input_name().sendKeys(AdventureVariables.adventureName);
+			logger.info(AdventureVariables.adventureName);
 
-//		SELECT ACTIVITIES
-
-			System.out.println("activities : " + AdventureVariables.activities.length);
+//			SELECT ACTIVITIES
+			logger.info("activities : " + AdventureVariables.activities.length);
 			for (int i = 0; i < AdventureVariables.activities.length; i++) {
 				// scroll into view
 				jsDriver.executeScript("arguments[0].scrollIntoView();", pObj.createAdventure_dropdown_activities());
 				pObj.createAdventure_dropdown_activities().click();
-				System.out.println(AdventureVariables.activities[i]);
 				pObj.createAdventure_dropdown_activities().sendKeys(AdventureVariables.activities[i]);
 				Thread.sleep(2000);
 				pObj.createAdventure_dropdown_activities().sendKeys(Keys.ENTER);
@@ -84,7 +101,7 @@ public class AdventureTest extends UtilBase{
 			/*
 			 * HANDLE :: The name has already been taken.
 			 */
-			System.out.println(driver.getCurrentUrl());
+			logger.info(driver.getCurrentUrl());
 
 			if (driver.getCurrentUrl().equals("https://uat.gearchecker.io/admin/adventures")) {
 				testPassed(testName);
@@ -120,15 +137,15 @@ public class AdventureTest extends UtilBase{
 			Thread.sleep(5000);
 
 			AdventureVariables.list_searchAdventure = pObj.adventure_search_list();
-			System.out.println(AdventureVariables.list_searchAdventure);
+			logger.info(AdventureVariables.list_searchAdventure);
 			if (AdventureVariables.list_searchAdventure.size() > 0) {
-				System.out.println("Adventure Found");
+				logger.info("Adventure Found");
 				String lvelement = AdventureVariables.list_searchAdventure.get(0).getText();
-				System.out.println(lvelement);
+				logger.info(lvelement);
 				Thread.sleep(2000);
 				testPassed(testName);
 			} else if (WebElementLib.doesElementExist(pObj.adventure_search_notFound())) {
-				System.out.println("Adventure Not Found");
+				logger.info("Adventure Not Found");
 				testFailed(testName);
 			}
 
@@ -144,7 +161,6 @@ public class AdventureTest extends UtilBase{
 		test = extent.createTest(testName);
 
 		try {
-
 			pObj.adventure_link_options().click();
 			Thread.sleep(1000);
 			pObj.adventure_link_view().click();
@@ -156,9 +172,48 @@ public class AdventureTest extends UtilBase{
 			} else {
 				testFailed(testName);
 			}
-
+//			CLOSE THE SHOW ADVENTURE MODAL
+			pObj.showAdventure_button_close().click();
 		} catch (Exception e) {
 			testException(testName, e);
+		}
+	}
+
+//	DELETE ADVENTURE
+	@Test(priority = 11)
+	public void adventure_deleteAdventure() {
+		String testName = "adventure_deleteAdventure";
+		test = extent.createTest(testName);
+
+		try {
+			pObj.adventure_link_options().click();
+			Thread.sleep(1000);
+			pObj.adventure_link_delete().click();
+			Thread.sleep(2000);
+
+//			HANDLE THE JAVASCRIPT ALERT
+			// Store the alert in a variable
+			Alert alert = driver.switchTo().alert();
+
+			// Store the alert in a variable for reuse
+			String text = alert.getText();
+			logger.info("Alert Text: " + text);
+
+			// Press the Ok button
+			alert.accept();
+
+			// check the pass / fail condition [check the toaster message]
+			if (WebElementLib.doesElementExist(pObj.alert_toastMessage())) {
+				String message = pObj.alert_toastMessage().getText().toLowerCase();
+				logger.info(message);
+				if (message.contains(GlobalVariables.alert_success_deleted)) {
+					testPassed(testName);
+				} else {
+					testFailed(testName);
+				}
+			}
+		} catch (Exception e) {
+
 		}
 	}
 

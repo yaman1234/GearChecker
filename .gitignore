@@ -1,14 +1,4 @@
-# Ignore a single file
-# /path/to/file.txt
-
 # Ignore a directory and all its contents
-# /screenshots/
-# /test-output/
+test-output/
+target/
 
-# Ignore all .png files
-# *.png
-# *.xml
-# *.html
-# Ignore specific file types in a directory
-# /target/
-# /target/

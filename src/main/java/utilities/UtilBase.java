@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.time.Duration;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -21,6 +22,7 @@ import com.aventstack.extentreports.ExtentTest;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import pageObjects.gearChecker_pageObjects;
+import pageObjects.gearlist_pageObjects;
 
 public class UtilBase {
 
@@ -32,9 +34,14 @@ public class UtilBase {
 //	Reporting
 	protected static ExtentReports extent;
 	protected static ExtentTest test;
+	
+//	logging
+	protected static Logger logger = null;
+	
 
 //	global vairables
 	protected gearChecker_pageObjects pObj = new gearChecker_pageObjects();
+	protected gearlist_pageObjects glObj = new gearlist_pageObjects();
 
 //	wait
 	protected static WaitUntil wait = null;
@@ -86,6 +93,7 @@ public class UtilBase {
 		} catch (IOException e) {
 			System.err.println("Error occurred saving screenshot!!");
 			e.printStackTrace();
+		
 		}
 //		return screenshotPath;						
 		/*
@@ -97,18 +105,21 @@ public class UtilBase {
 	public void testPassed(String testname) {
 		test.pass("PASS :: " + testname);
 		test.addScreenCaptureFromPath(capture(testname));
+		logger.info("PASS :: " + testname);
 		Assert.assertTrue(true);
 	}
 
 	public void testFailed(String testname) {
 		test.fail("FAIL :: " + testname);
 		test.addScreenCaptureFromPath(capture(testname));
+		logger.error("FAIL :: " + testname);
 		Assert.assertTrue(false);
 	}
 
 	public void testException(String testname, Exception e) {
 		test.fail("EXCEPTION :: " + testname + "\n" + e);
 		test.addScreenCaptureFromPath(capture(testname));
+		logger.error("EXCEPTION :: " + e);
 		Assert.assertTrue(false);
 	}
 

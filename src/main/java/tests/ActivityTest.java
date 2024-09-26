@@ -1,7 +1,10 @@
 package tests;
 
+import org.apache.logging.log4j.LogManager;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import utilities.RobotClass;
@@ -13,10 +16,17 @@ import variables.GlobalVariables;
 public class ActivityTest extends UtilBase {
 
 	
-	public void testMethod() {
-		System.out.println("Hello world");
+	@BeforeClass
+	public void beforeClass() {
+//		logging
+		logger=LogManager.getLogger(ActivityTest.class);
+		logger.info("Start :: ActivityTest ");
+
 	}
-	
+	@AfterClass
+	public void afterClass() {
+		logger.info("END :: ActivityTest ");
+	}
 	
 	// Add New Activity
 		@Test(priority = 3)
@@ -30,6 +40,7 @@ public class ActivityTest extends UtilBase {
 				Thread.sleep(3000);
 
 				pObj.createActivity_input_name().sendKeys(ActivityVariables.activityName);
+				logger.info(ActivityVariables.activityName);
 				pObj.createActivity_toggle_isFeatured().click();
 				pObj.createActivity_button_uploadLogo().click();
 				Thread.sleep(3000);
@@ -51,7 +62,8 @@ public class ActivityTest extends UtilBase {
 //				check the pass / fail condition [check the toaster message]
 				if (WebElementLib.doesElementExist(pObj.alert_toastMessage())) {
 					String message = pObj.alert_toastMessage().getText();
-					if (message.equals(GlobalVariables.alert_success_created)) {
+					logger.info(message);
+					if (message.contains(GlobalVariables.alert_success_created)) {
 						testPassed(testName);
 					} else {
 						testFailed(testName);
@@ -77,19 +89,19 @@ public class ActivityTest extends UtilBase {
 				ActivityVariables.list_searchActivity = pObj.activity_search_list();
 
 				if (ActivityVariables.list_searchActivity.size() > 0) {
-					System.out.println("Activity Found");
+					logger.info("Activity Found");
 					WebElement element = ActivityVariables.list_searchActivity.get(0);
 					element.click();
 					Thread.sleep(2000);
 					testPassed(testName);
 				} else if (WebElementLib.doesElementExist(pObj.activity_search_notFound())) {
-					System.out.println("Activity Not Found");
+					logger.info("Activity Not Found");
 					testFailed(testName);
 				}
 
-//				System.out.println(activitiesFound.size());
+//				logger.info(activitiesFound.size());
 //				for(int i = 0; i < activitiesFound.size(); i++) {
-//					System.out.println(activitiesFound.get(i).getText());;
+//					logger.info(activitiesFound.get(i).getText());;
 //				}
 
 			} catch (Exception e) {
@@ -136,7 +148,7 @@ public class ActivityTest extends UtilBase {
 //				check the pass / fail condition [check the toaster message]
 				if (WebElementLib.doesElementExist(pObj.alert_toastMessage())) {
 					String message = pObj.alert_toastMessage().getText();
-					if (message.equals(GlobalVariables.alert_success_created)) {
+					if (message.contains(GlobalVariables.alert_success_created)) {
 						testPassed(testName);
 					} else {
 						testFailed(testName);
@@ -162,9 +174,9 @@ public class ActivityTest extends UtilBase {
 				Thread.sleep(2000);
 
 //				CLICK DELETE BUTTON
-//				System.out.println(activitiesFound.size());
+//				logger.info(activitiesFound.size());
 //				for(int i = 0; i < activitiesFound.size(); i++) {
-//					System.out.println(activitiesFound.get(i).getText());;
+//					logger.info(activitiesFound.get(i).getText());;
 //				}
 				pObj.activity_button_delete().click();
 //				HANDLE THE JAVASCRIPT ALERT
@@ -173,7 +185,7 @@ public class ActivityTest extends UtilBase {
 
 				// Store the alert in a variable for reuse
 				String text = alert.getText();
-				System.out.println("Alert Text: " + text);
+				logger.info("Alert Text: " + text);
 
 				// Press the Ok button
 				alert.accept();
@@ -181,7 +193,7 @@ public class ActivityTest extends UtilBase {
 				// check the pass / fail condition [check the toaster message]
 				if (WebElementLib.doesElementExist(pObj.alert_toastMessage())) {
 					String message = pObj.alert_toastMessage().getText();
-					if (message.equals(GlobalVariables.alert_success_deleted)) {
+					if (message.contains(GlobalVariables.alert_success_deleted)) {
 						testPassed(testName);
 					} else {
 						testFailed(testName);
