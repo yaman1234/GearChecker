@@ -20,7 +20,7 @@ public class AdventureTest extends UtilBase {
 //		logging
 		logger = LogManager.getLogger(AdventureTest.class);
 		logger.info("Start :: AdventureTest ");
-
+		driver.navigate().refresh();
 	}
 
 	@AfterClass
@@ -97,7 +97,7 @@ public class AdventureTest extends UtilBase {
 			jsDriver.executeScript("arguments[0].scrollIntoView();", pObj.createAdventure_button_saveChanges());
 			Thread.sleep(1000);
 			pObj.createAdventure_button_saveChanges().click();
-			Thread.sleep(3000);
+			Thread.sleep(7000);
 			/*
 			 * HANDLE :: The name has already been taken.
 			 */

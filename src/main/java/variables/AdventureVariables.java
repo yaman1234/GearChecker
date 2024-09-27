@@ -10,7 +10,7 @@ public class AdventureVariables {
 	
 //	VARIABLES FOR ADVENTURE
 	public static String adventureName = "Test Adventure " + DateOperations.getCurrentTimestamp();
-	public static String[] activities = { "Biking", "Bonfire", "Fishing" };
+	public static String[] activities = { "Test Activity", "Test Sub Activity 1"};
 	public static String country = "Nepal";
 	public static String tag = "Nepal Adventure Hiking";
 	public static String duration = "5";

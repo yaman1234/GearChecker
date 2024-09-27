@@ -21,6 +21,7 @@ public class ActivityTest extends UtilBase {
 //		logging
 		logger=LogManager.getLogger(ActivityTest.class);
 		logger.info("Start :: ActivityTest ");
+		driver.navigate().refresh();
 
 	}
 	@AfterClass
