@@ -7,7 +7,7 @@ import utilities.UtilBase;
 public class TearDown extends UtilBase {
 
 	
-	@AfterClass
+	@AfterClass (alwaysRun = true)
 	public static void teardown() {
 		try {
 			extent.flush();

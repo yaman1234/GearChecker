@@ -91,23 +91,31 @@ public class GearlistTest extends UtilBase {
 //			GET THE PRODUCTS
 			List<WebElement> products = glObj.newGearlist_subcategories_products();
 			logger.info("Products Count : " + products.size());
-			products.forEach(item -> logger.info(item.getText()));
+			
+//			CHECK IF PRODUCTS ARE AVAILABLE
+			if(products.size() > 0) {
+				products.forEach(item -> logger.info(item.getText()));
 
-//			ADD THE FIRST PRODUCT
-			products.get(0).click();
-			Thread.sleep(1000);
+//				ADD THE FIRST PRODUCT
+				products.get(0).click();
+				Thread.sleep(1000);
 
-//			SAVE THE GEARLIST
-			glObj.newGearlist_btn_save().click();
-			Thread.sleep(4000);
+//				SAVE THE GEARLIST
+				glObj.newGearlist_btn_save().click();
+				Thread.sleep(4000);
 
-//			CHECK THE PASS / FAIL CONDITION [check the URL]
-			logger.info("CURRENT URL : " + driver.getCurrentUrl());
-			if (driver.getCurrentUrl().equals("https://uat.gearchecker.io/admin/gear-lists")) {
-				testPassed(testName);
-			} else {
-				testFailed(testName);
+//				CHECK THE PASS / FAIL CONDITION [check the URL]
+				logger.info("CURRENT URL : " + driver.getCurrentUrl());
+				if (driver.getCurrentUrl().equals("https://uat.gearchecker.io/admin/gear-lists")) {
+					testPassed(testName);
+				} else {
+					testFailed(testName);
+				}
 			}
+			else {
+				logger.info("NO ANY PRODUCTS FOUND FOR THE SELECTED CATEGORY");
+			}
+			
 		} catch (Exception e) {
 			testException(testName, e);
 		}

@@ -1294,3 +1294,522 @@ Session ID: 19baf924d613eb036738fb76ce6b6ba9
 2024-09-27 11:40:56.106 [main] INFO  GearlistTest.lambda$3:125 - New Gearlist
 2024-09-27 11:40:56.277 [main] INFO  GearlistTest.testPassed:108 - PASS :: gearlist_getAllGearList
 2024-09-27 11:40:56.278 [main] INFO  GearlistTest.afterClass:32 - END :: GearlistTest 
+2024-09-30 10:25:18.561 [main] INFO  WebDriverManager.resolveDriverVersion:1239 - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-09-30 10:25:18.609 [main] INFO  WebDriverManager.exportDriver:1301 - Exporting webdriver.chrome.driver as C:\Users\yamah022\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-09-30 10:25:22.358 [main] INFO  LoginTest.beforeClass:19 - Start :: Login Test 
+2024-09-30 10:25:27.610 [main] INFO  LoginTest.loginTest_invalidCredentials:38 - test@gearchecker.test, test1234
+2024-09-30 10:25:33.878 [main] INFO  LoginTest.testPassed:108 - PASS :: loginTest_invalidCredentials
+2024-09-30 10:25:37.385 [main] INFO  LoginTest.loginTest_validCredentials:65 - superadmin@gearchecker.test, 12345678
+2024-09-30 10:25:45.664 [main] INFO  LoginTest.testPassed:108 - PASS :: loginTest_validCredentials
+2024-09-30 10:25:45.666 [main] INFO  LoginTest.afterClass:24 - END :: Login Test 
+2024-09-30 10:25:45.667 [main] INFO  ActivityTest.beforeClass:23 - Start :: ActivityTest 
+2024-09-30 10:25:57.714 [main] INFO  ActivityTest.activity_createActivity:44 - Test Acitivity 0930 102557
+2024-09-30 10:26:12.920 [main] INFO  ActivityTest.activity_createActivity:66 - Activity created successfully!
+2024-09-30 10:26:13.243 [main] INFO  ActivityTest.testPassed:108 - PASS :: activity_createActivity
+2024-09-30 10:26:20.322 [main] INFO  ActivityTest.activity_searchActivity:93 - Activity Found
+2024-09-30 10:26:22.547 [main] INFO  ActivityTest.testPassed:108 - PASS :: activity_searchActivity
+2024-09-30 17:36:45.112 [main] INFO  WebDriverManager.resolveDriverVersion:1239 - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-09-30 17:36:45.187 [main] INFO  WebDriverManager.exportDriver:1301 - Exporting webdriver.chrome.driver as C:\Users\yamah022\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-09-30 17:36:49.771 [main] INFO  LoginTest.beforeClass:19 - Start :: Login Test 
+2024-09-30 17:36:55.395 [main] INFO  LoginTest.loginTest_invalidCredentials:38 - test@gearchecker.test, test1234
+2024-09-30 17:37:01.952 [main] INFO  LoginTest.testPassed:108 - PASS :: loginTest_invalidCredentials
+2024-09-30 17:37:05.792 [main] INFO  LoginTest.loginTest_validCredentials:65 - superadmin@gearchecker.test, 12345678
+2024-09-30 17:37:15.495 [main] INFO  LoginTest.testPassed:108 - PASS :: loginTest_validCredentials
+2024-09-30 17:37:15.497 [main] INFO  LoginTest.afterClass:24 - END :: Login Test 
+2024-09-30 17:37:15.499 [main] INFO  ActivityTest.beforeClass:25 - Start :: ActivityTest 
+2024-09-30 17:37:30.174 [main] INFO  ActivityTest.lambda$1:51 - Bbidhan Activity
+2024-09-30 17:37:30.174 [main] INFO  ActivityTest.lambda$1:51 - Test Acitivity 0930 102557
+2024-09-30 17:37:30.174 [main] INFO  ActivityTest.lambda$1:51 - Marathan
+2024-09-30 17:37:30.175 [main] INFO  ActivityTest.lambda$1:51 - Ice Mixed Climbing
+2024-09-30 17:37:30.175 [main] INFO  ActivityTest.lambda$1:51 - Test Activity
+2024-09-30 17:37:30.175 [main] INFO  ActivityTest.lambda$1:51 - Paddling
+2024-09-30 17:37:30.176 [main] INFO  ActivityTest.lambda$1:51 - Test Acitivity 0927 105916
+2024-09-30 17:37:30.176 [main] INFO  ActivityTest.lambda$1:51 - Skiing
+2024-09-30 17:37:30.177 [main] INFO  ActivityTest.lambda$1:51 - Hunting
+2024-09-30 17:37:30.178 [main] INFO  ActivityTest.lambda$1:51 - Fishing
+2024-09-30 17:37:30.178 [main] INFO  ActivityTest.lambda$1:51 - Kiting
+2024-09-30 17:37:30.343 [main] INFO  ActivityTest.activity_createActivity:56 - Test Activity 0930 173730
+2024-09-30 17:37:45.685 [main] INFO  ActivityTest.activity_createActivity:74 - Activity created successfully!
+2024-09-30 17:37:45.903 [main] INFO  ActivityTest.testPassed:108 - PASS :: activity_createActivity
+2024-09-30 17:37:53.270 [main] INFO  ActivityTest.activity_searchActivity:101 - Activity Found
+2024-09-30 17:37:55.501 [main] INFO  ActivityTest.testPassed:108 - PASS :: activity_searchActivity
+2024-09-30 17:42:10.542 [main] INFO  LoginTest.beforeClass:19 - Start :: Login Test 
+2024-09-30 17:42:10.606 [main] INFO  LoginTest.afterClass:24 - END :: Login Test 
+2024-09-30 17:42:10.608 [main] INFO  ActivityTest.beforeClass:25 - Start :: ActivityTest 
+2024-09-30 17:42:21.552 [main] INFO  LoginTest.beforeClass:19 - Start :: Login Test 
+2024-09-30 17:42:21.603 [main] INFO  LoginTest.afterClass:24 - END :: Login Test 
+2024-09-30 17:42:21.604 [main] INFO  ActivityTest.beforeClass:25 - Start :: ActivityTest 
+2024-09-30 17:42:59.922 [main] INFO  LoginTest.beforeClass:19 - Start :: Login Test 
+2024-09-30 17:42:59.962 [main] INFO  LoginTest.afterClass:24 - END :: Login Test 
+2024-09-30 17:42:59.963 [main] INFO  ActivityTest.beforeClass:25 - Start :: ActivityTest 
+2024-09-30 17:43:28.803 [main] INFO  LoginTest.beforeClass:19 - Start :: Login Test 
+2024-09-30 17:43:28.884 [main] INFO  LoginTest.afterClass:24 - END :: Login Test 
+2024-09-30 17:43:28.886 [main] INFO  ActivityTest.beforeClass:25 - Start :: ActivityTest 
+2024-09-30 17:47:43.407 [main] INFO  ActivityTest.beforeClass:25 - Start :: ActivityTest 
+2024-09-30 17:48:17.375 [main] INFO  ActivityTest.beforeClass:25 - Start :: ActivityTest 
+2024-09-30 19:45:17.320 [main] INFO  WebDriverManager.resolveDriverVersion:1239 - Using chromedriver 129.0.6668.70 (resolved driver for Chrome 129)
+2024-09-30 19:45:17.477 [main] INFO  WebDriverManager.exportDriver:1301 - Exporting webdriver.chrome.driver as C:\Users\yamah022\.cache\selenium\chromedriver\win64\129.0.6668.70\chromedriver.exe
+2024-09-30 19:45:22.472 [main] INFO  LoginTest.beforeClass:19 - Start :: Login Test 
+2024-09-30 19:45:29.503 [main] INFO  LoginTest.loginTest_invalidCredentials:38 - test@gearchecker.test, test1234
+2024-09-30 19:45:36.471 [main] INFO  LoginTest.testPassed:108 - PASS :: loginTest_invalidCredentials
+2024-09-30 19:45:40.301 [main] INFO  LoginTest.loginTest_validCredentials:65 - superadmin@gearchecker.test, 12345678
+2024-09-30 19:45:49.680 [main] INFO  LoginTest.testPassed:108 - PASS :: loginTest_validCredentials
+2024-09-30 19:45:49.683 [main] INFO  LoginTest.afterClass:24 - END :: Login Test 
+2024-09-30 19:45:49.685 [main] INFO  ActivityTest.beforeClass:25 - Start :: ActivityTest 
+2024-09-30 19:46:01.350 [main] INFO  ActivityTest.lambda$1:51 - Bbidhan Activity
+2024-09-30 19:46:01.351 [main] INFO  ActivityTest.lambda$1:51 - Test Acitivity 0930 102557
+2024-09-30 19:46:01.352 [main] INFO  ActivityTest.lambda$1:51 - Marathan
+2024-09-30 19:46:01.353 [main] INFO  ActivityTest.lambda$1:51 - Ice Mixed Climbing
+2024-09-30 19:46:01.354 [main] INFO  ActivityTest.lambda$1:51 - Test Activity 0930 173730
+2024-09-30 19:46:01.355 [main] INFO  ActivityTest.lambda$1:51 - Test Activity
+2024-09-30 19:46:01.356 [main] INFO  ActivityTest.lambda$1:51 - Paddling
+2024-09-30 19:46:01.357 [main] INFO  ActivityTest.lambda$1:51 - Test Acitivity 0927 105916
+2024-09-30 19:46:01.359 [main] INFO  ActivityTest.lambda$1:51 - Skiing
+2024-09-30 19:46:01.359 [main] INFO  ActivityTest.lambda$1:51 - Hunting
+2024-09-30 19:46:01.360 [main] INFO  ActivityTest.lambda$1:51 - Fishing
+2024-09-30 19:46:01.361 [main] INFO  ActivityTest.lambda$1:51 - Kiting
+2024-09-30 19:46:01.882 [main] INFO  ActivityTest.activity_createActivity:56 - Test Activity 0930 194601
+2024-09-30 19:46:18.432 [main] INFO  ActivityTest.activity_createActivity:74 - Activity created successfully!
+2024-09-30 19:46:18.824 [main] INFO  ActivityTest.testPassed:108 - PASS :: activity_createActivity
+2024-09-30 19:46:25.917 [main] INFO  ActivityTest.activity_searchActivity:101 - Activity Found
+2024-09-30 19:46:28.409 [main] INFO  ActivityTest.testPassed:108 - PASS :: activity_searchActivity
+2024-09-30 19:46:35.512 [main] INFO  ActivityTest.activity_updateActivity:138 - Activity Found
+2024-09-30 19:46:37.974 [main] INFO  ActivityTest.testPassed:108 - PASS :: activity_updateActivity
+2024-09-30 19:47:00.192 [main] INFO  ActivityTest.testPassed:108 - PASS :: activity_createSubActivity
+2024-09-30 19:47:02.642 [main] INFO  ActivityTest.activity_deleteActivity:237 - Alert Text: Are you sure you want to make changes?
+2024-09-30 19:47:04.556 [main] INFO  ActivityTest.testPassed:108 - PASS :: activity_deleteActivity
+2024-09-30 19:47:04.558 [main] INFO  ActivityTest.afterClass:32 - END :: ActivityTest 
+2024-10-02 21:16:29.568 [main] INFO  WebDriverManager.resolveDriverVersion:1239 - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-02 21:16:29.614 [main] INFO  WebDriverManager.exportDriver:1301 - Exporting webdriver.chrome.driver as C:\Users\yamah022\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-02 21:16:35.552 [main] INFO  LoginTest.beforeClass:19 - Start :: Login Test 
+2024-10-02 21:16:42.718 [main] INFO  LoginTest.loginTest_invalidCredentials:38 - test@gearchecker.test, test1234
+2024-10-02 21:16:50.030 [main] INFO  LoginTest.testPassed:108 - PASS :: loginTest_invalidCredentials
+2024-10-02 21:16:54.175 [main] INFO  LoginTest.loginTest_validCredentials:65 - superadmin@gearchecker.test, 12345678
+2024-10-02 21:17:05.836 [main] INFO  LoginTest.testPassed:108 - PASS :: loginTest_validCredentials
+2024-10-02 21:17:05.838 [main] INFO  LoginTest.afterClass:24 - END :: Login Test 
+2024-10-02 21:17:05.840 [main] INFO  ActivityTest.beforeClass:25 - Start :: ActivityTest 
+2024-10-02 21:17:17.462 [main] INFO  ActivityTest.lambda$1:51 - Bbidhan Activity
+2024-10-02 21:17:17.463 [main] INFO  ActivityTest.lambda$1:51 - Test Acitivity 0930 102557
+2024-10-02 21:17:17.464 [main] INFO  ActivityTest.lambda$1:51 - Marathan
+2024-10-02 21:17:17.465 [main] INFO  ActivityTest.lambda$1:51 - Ice Mixed Climbing
+2024-10-02 21:17:17.465 [main] INFO  ActivityTest.lambda$1:51 - Test Activity 0930 173730
+2024-10-02 21:17:17.466 [main] INFO  ActivityTest.lambda$1:51 - Test Activity
+2024-10-02 21:17:17.466 [main] INFO  ActivityTest.lambda$1:51 - Paddling
+2024-10-02 21:17:17.466 [main] INFO  ActivityTest.lambda$1:51 - Test Acitivity 0927 105916
+2024-10-02 21:17:17.467 [main] INFO  ActivityTest.lambda$1:51 - Test Test Test Test Test Te
+2024-10-02 21:17:17.467 [main] INFO  ActivityTest.lambda$1:51 - Skiing
+2024-10-02 21:17:17.467 [main] INFO  ActivityTest.lambda$1:51 - Hunting
+2024-10-02 21:17:17.467 [main] INFO  ActivityTest.lambda$1:51 - Fishing
+2024-10-02 21:17:17.467 [main] INFO  ActivityTest.lambda$1:51 - Kiting
+2024-10-02 21:17:17.660 [main] INFO  ActivityTest.activity_createActivity:56 - Test Activity 1002 211717
+2024-10-02 21:17:33.060 [main] INFO  ActivityTest.activity_createActivity:74 - Activity created successfully!
+2024-10-02 21:17:33.264 [main] INFO  ActivityTest.testPassed:108 - PASS :: activity_createActivity
+2024-10-02 21:17:40.556 [main] INFO  ActivityTest.activity_searchActivity:101 - Activity Found
+2024-10-02 21:17:42.787 [main] INFO  ActivityTest.testPassed:108 - PASS :: activity_searchActivity
+2024-10-02 21:17:50.067 [main] INFO  ActivityTest.activity_updateActivity:138 - Activity Found
+2024-10-02 21:17:52.303 [main] INFO  ActivityTest.testPassed:108 - PASS :: activity_updateActivity
+2024-10-02 21:18:13.244 [main] INFO  ActivityTest.testPassed:108 - PASS :: activity_createSubActivity
+2024-10-02 21:18:15.523 [main] INFO  ActivityTest.activity_deleteActivity:237 - Alert Text: Are you sure you want to make changes?
+2024-10-02 21:18:16.966 [main] INFO  ActivityTest.testPassed:108 - PASS :: activity_deleteActivity
+2024-10-02 21:18:16.968 [main] INFO  ActivityTest.afterClass:32 - END :: ActivityTest 
+2024-10-02 21:18:16.970 [main] INFO  AdventureTest.beforeClass:22 - Start :: AdventureTest 
+2024-10-02 21:18:42.331 [main] INFO  AdventureTest.adventure_createAdventure:52 - Test Adventure 1002 211836
+2024-10-02 21:18:42.332 [main] INFO  AdventureTest.adventure_createAdventure:55 - activities : 2
+2024-10-02 21:19:15.094 [main] INFO  AdventureTest.adventure_createAdventure:104 - https://uat.gearchecker.io/admin/adventures
+2024-10-02 21:19:15.301 [main] INFO  AdventureTest.testPassed:108 - PASS :: adventure_createAdventure
+2024-10-02 21:19:24.527 [main] INFO  AdventureTest.adventure_searchAdventure:140 - [[[ChromeDriver: chrome on windows (2b12a77b3c32576db3fccec435db1d5c)] -> xpath: //body[1]/div[1]/div[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[4]/div]]
+2024-10-02 21:19:24.527 [main] INFO  AdventureTest.adventure_searchAdventure:142 - Adventure Found
+2024-10-02 21:19:24.547 [main] INFO  AdventureTest.adventure_searchAdventure:144 - Test Adventure...
+2024-10-02 21:19:26.708 [main] INFO  AdventureTest.testPassed:108 - PASS :: adventure_searchAdventure
+2024-10-02 21:19:31.343 [main] INFO  AdventureTest.testPassed:108 - PASS :: adventure_viewAdventure
+2024-10-02 21:19:34.987 [main] INFO  AdventureTest.adventure_deleteAdventure:200 - Alert Text: Are you sure you want to make changes?
+2024-10-02 21:19:36.059 [main] INFO  AdventureTest.adventure_deleteAdventure:208 - adventure deleted successfully
+2024-10-02 21:19:36.209 [main] INFO  AdventureTest.testPassed:108 - PASS :: adventure_deleteAdventure
+2024-10-02 21:19:36.210 [main] INFO  AdventureTest.afterClass:28 - END :: AdventureTest 
+2024-10-02 21:19:36.212 [main] INFO  GearlistTest.beforeClass:26 - Start :: GearlistTest 
+2024-10-02 21:19:56.888 [main] INFO  GearlistTest.gearlist_createGearlist:50 - Adventures : [Select Adventure, Mountain Flight Rajeev, Andean Summit Expedition, Greenland Crossing, Mt. Everest, Mt. Kilimanjaro, Norge på Langs, Patagonian Wilds Expedition, Sahara Dunes Odyssey, Test Adventure 0927 155354, Test Adventure 0930 123036, Test Adventure 1, Tilicho Lake Trek, Tso Rolpa Trek]
+2024-10-02 21:19:57.654 [main] INFO  GearlistTest.gearlist_createGearlist:55 - Activities : [Select Activity, Test Activity]
+2024-10-02 21:19:58.461 [main] INFO  GearlistTest.gearlist_createGearlist:60 - Sub Activities : [Select Subactivity, Test Sub Activity 1, Test Sub Activity 2, Test Sub Activity 3]
+2024-10-02 21:19:59.371 [main] INFO  GearlistTest.gearlist_createGearlist:65 - User : [Select User, Bellis Strut, Bidhan Marasine, Bikas Gurung, Henry Cahlid, john carter, Lamichhane Vai Test, Norges Paulo, Rajeev Lamichhane, Rajeev Lamichhane, Test User, Tester, User]
+2024-10-02 21:20:03.752 [main] INFO  GearlistTest.gearlist_createGearlist:74 - Count of categories: 4
+2024-10-02 21:20:03.777 [main] INFO  GearlistTest.lambda$0:75 - Storage
+2024-10-02 21:20:03.802 [main] INFO  GearlistTest.lambda$0:75 - Head
+2024-10-02 21:20:03.826 [main] INFO  GearlistTest.lambda$0:75 - Upper Body
+2024-10-02 21:20:03.850 [main] INFO  GearlistTest.lambda$0:75 - Lower Body
+2024-10-02 21:20:04.985 [main] INFO  GearlistTest.gearlist_createGearlist:83 - Count of subcategories: 1
+2024-10-02 21:20:05.005 [main] INFO  GearlistTest.lambda$1:84 - Travel Bag
++
+2024-10-02 21:20:16.381 [main] ERROR GearlistTest.testException:122 - EXCEPTION :: java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "products" is null
+2024-10-02 21:20:26.744 [main] ERROR GearlistTest.testException:122 - EXCEPTION :: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=129.0.6668.71)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2b12a77b3c32576db3fccec435db1d5c, clickElement {id=f.1A0E4F22723C4E226631C82B5044C726.d.4C59D1C7F7470E6FD97CA73C050B6DDE.e.2855}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.71, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\yamah022\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57139}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57139/devtoo..., se:cdpVersion: 129.0.6668.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (2b12a77b3c32576db3fccec435db1d5c)] -> xpath: //p[normalize-space()='Gear List']]
+Session ID: 2b12a77b3c32576db3fccec435db1d5c
+2024-10-02 21:20:26.745 [main] INFO  GearlistTest.afterClass:32 - END :: GearlistTest 
+2024-10-03 17:43:36.126 [main] INFO  WebDriverManager.resolveDriverVersion:1239 - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-03 17:43:36.207 [main] INFO  WebDriverManager.exportDriver:1301 - Exporting webdriver.chrome.driver as C:\Users\yamah022\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-03 17:43:42.354 [main] INFO  LoginTest.beforeClass:19 - Start :: Login Test 
+2024-10-03 17:43:48.089 [main] INFO  LoginTest.loginTest_invalidCredentials:38 - test@gearchecker.test, test1234
+2024-10-03 17:43:55.217 [main] INFO  LoginTest.testPassed:108 - PASS :: loginTest_invalidCredentials
+2024-10-03 17:43:59.401 [main] INFO  LoginTest.loginTest_validCredentials:65 - superadmin@gearchecker.test, 12345678
+2024-10-03 17:44:11.177 [main] INFO  LoginTest.testPassed:108 - PASS :: loginTest_validCredentials
+2024-10-03 17:44:11.179 [main] INFO  LoginTest.afterClass:24 - END :: Login Test 
+2024-10-03 17:44:11.188 [main] INFO  ActivityTest.beforeClass:25 - Start :: ActivityTest 
+2024-10-03 17:44:41.174 [main] INFO  ActivityTest.lambda$1:51 - Bbidhan Activity
+2024-10-03 17:44:41.175 [main] INFO  ActivityTest.lambda$1:51 - Test Acitivity 0930 102557
+2024-10-03 17:44:41.176 [main] INFO  ActivityTest.lambda$1:51 - Marathan
+2024-10-03 17:44:41.176 [main] INFO  ActivityTest.lambda$1:51 - Ice Mixed Climbing
+2024-10-03 17:44:41.177 [main] INFO  ActivityTest.lambda$1:51 - Test Activity 0930 173730
+2024-10-03 17:44:41.177 [main] INFO  ActivityTest.lambda$1:51 - Test Activity
+2024-10-03 17:44:41.178 [main] INFO  ActivityTest.lambda$1:51 - Paddling
+2024-10-03 17:44:41.178 [main] INFO  ActivityTest.lambda$1:51 - Test Acitivity 0927 105916
+2024-10-03 17:44:41.179 [main] INFO  ActivityTest.lambda$1:51 - Test Test Test Test Test Te
+2024-10-03 17:44:41.179 [main] INFO  ActivityTest.lambda$1:51 - Skiing
+2024-10-03 17:44:41.179 [main] INFO  ActivityTest.lambda$1:51 - Hunting
+2024-10-03 17:44:41.180 [main] INFO  ActivityTest.lambda$1:51 - Fishing
+2024-10-03 17:44:41.181 [main] INFO  ActivityTest.lambda$1:51 - Kiting
+2024-10-03 17:44:41.505 [main] INFO  ActivityTest.activity_createActivity:56 - Test Activity 1003 174441
+2024-10-03 17:44:57.297 [main] INFO  ActivityTest.activity_createActivity:74 - Activity created successfully!
+2024-10-03 17:44:57.648 [main] INFO  ActivityTest.testPassed:108 - PASS :: activity_createActivity
+2024-10-03 17:45:06.666 [main] INFO  ActivityTest.activity_searchActivity:101 - Activity Found
+2024-10-03 17:45:09.047 [main] INFO  ActivityTest.testPassed:108 - PASS :: activity_searchActivity
+2024-10-03 17:45:16.236 [main] INFO  ActivityTest.activity_updateActivity:138 - Activity Found
+2024-10-03 17:45:18.589 [main] INFO  ActivityTest.testPassed:108 - PASS :: activity_updateActivity
+2024-10-03 17:45:39.926 [main] INFO  ActivityTest.testPassed:108 - PASS :: activity_createSubActivity
+2024-10-03 17:45:42.280 [main] INFO  ActivityTest.activity_deleteActivity:237 - Alert Text: Are you sure you want to make changes?
+2024-10-03 17:45:43.928 [main] INFO  ActivityTest.testPassed:108 - PASS :: activity_deleteActivity
+2024-10-03 17:45:43.930 [main] INFO  ActivityTest.afterClass:32 - END :: ActivityTest 
+2024-10-03 17:50:48.620 [main] INFO  ActivityTest.beforeClass:25 - Start :: ActivityTest 
+2024-10-03 17:51:00.245 [main] INFO  WebDriverManager.resolveDriverVersion:1239 - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-03 17:51:00.326 [main] INFO  WebDriverManager.exportDriver:1301 - Exporting webdriver.chrome.driver as C:\Users\yamah022\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-03 17:51:05.465 [main] INFO  LoginTest.beforeClass:19 - Start :: Login Test 
+2024-10-03 17:51:12.089 [main] INFO  LoginTest.loginTest_invalidCredentials:38 - test@gearchecker.test, test1234
+2024-10-03 17:51:19.126 [main] INFO  LoginTest.testPassed:108 - PASS :: loginTest_invalidCredentials
+2024-10-03 17:51:23.253 [main] INFO  LoginTest.loginTest_validCredentials:65 - superadmin@gearchecker.test, 12345678
+2024-10-03 17:51:32.200 [main] INFO  LoginTest.testPassed:108 - PASS :: loginTest_validCredentials
+2024-10-03 17:51:32.202 [main] INFO  LoginTest.afterClass:24 - END :: Login Test 
+2024-10-03 17:51:32.204 [main] INFO  ActivityTest.beforeClass:25 - Start :: ActivityTest 
+2024-10-03 17:51:44.328 [main] INFO  ActivityTest.lambda$1:51 - Bbidhan Activity
+2024-10-03 17:51:44.329 [main] INFO  ActivityTest.lambda$1:51 - Test Acitivity 0930 102557
+2024-10-03 17:51:44.329 [main] INFO  ActivityTest.lambda$1:51 - Marathan
+2024-10-03 17:51:44.330 [main] INFO  ActivityTest.lambda$1:51 - Ice Mixed Climbing
+2024-10-03 17:51:44.331 [main] INFO  ActivityTest.lambda$1:51 - Test Activity 0930 173730
+2024-10-03 17:51:44.331 [main] INFO  ActivityTest.lambda$1:51 - Test Activity
+2024-10-03 17:51:44.332 [main] INFO  ActivityTest.lambda$1:51 - Paddling
+2024-10-03 17:51:44.332 [main] INFO  ActivityTest.lambda$1:51 - Test Acitivity 0927 105916
+2024-10-03 17:51:44.333 [main] INFO  ActivityTest.lambda$1:51 - Test Test Test Test Test Te
+2024-10-03 17:51:44.333 [main] INFO  ActivityTest.lambda$1:51 - Skiing
+2024-10-03 17:51:44.334 [main] INFO  ActivityTest.lambda$1:51 - Hunting
+2024-10-03 17:51:44.335 [main] INFO  ActivityTest.lambda$1:51 - Fishing
+2024-10-03 17:51:44.335 [main] INFO  ActivityTest.lambda$1:51 - Kiting
+2024-10-03 17:51:44.694 [main] INFO  ActivityTest.activity_createActivity:56 - Test Activity 1003 175144
+2024-10-03 17:52:00.511 [main] INFO  ActivityTest.activity_createActivity:74 - Activity created successfully!
+2024-10-03 17:52:00.830 [main] INFO  ActivityTest.testPassed:108 - PASS :: activity_createActivity
+2024-10-03 17:52:08.228 [main] INFO  ActivityTest.activity_searchActivity:101 - Activity Found
+2024-10-03 17:52:10.682 [main] INFO  ActivityTest.testPassed:108 - PASS :: activity_searchActivity
+2024-10-03 17:52:18.588 [main] INFO  ActivityTest.activity_updateActivity:138 - Activity Found
+2024-10-03 17:52:20.946 [main] INFO  ActivityTest.testPassed:108 - PASS :: activity_updateActivity
+2024-10-03 17:52:20.948 [main] INFO  ActivityTest.afterClass:32 - END :: ActivityTest 
+2024-10-03 18:10:46.153 [main] INFO  ActivityTest.beforeClass:40 - Start :: ActivityTest 
+2024-10-03 18:10:57.422 [main] INFO  WebDriverManager.resolveDriverVersion:1239 - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-03 18:10:57.493 [main] INFO  WebDriverManager.exportDriver:1301 - Exporting webdriver.chrome.driver as C:\Users\yamah022\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-03 18:11:01.523 [main] INFO  LoginTest.beforeClass:19 - Start :: Login Test 
+2024-10-03 18:11:07.311 [main] INFO  LoginTest.loginTest_invalidCredentials:38 - test@gearchecker.test, test1234
+2024-10-03 18:11:14.020 [main] INFO  LoginTest.testPassed:108 - PASS :: loginTest_invalidCredentials
+2024-10-03 18:11:18.553 [main] INFO  LoginTest.loginTest_validCredentials:65 - superadmin@gearchecker.test, 12345678
+2024-10-03 18:11:29.550 [main] INFO  LoginTest.testPassed:108 - PASS :: loginTest_validCredentials
+2024-10-03 18:11:29.552 [main] INFO  LoginTest.afterClass:24 - END :: Login Test 
+2024-10-03 18:11:29.554 [main] INFO  ActivityTest.beforeClass:40 - Start :: ActivityTest 
+2024-10-03 18:11:40.804 [main] INFO  ActivityTest.lambda$1:66 - Bbidhan Activity
+2024-10-03 18:11:40.805 [main] INFO  ActivityTest.lambda$1:66 - Test Acitivity 0930 102557
+2024-10-03 18:11:40.805 [main] INFO  ActivityTest.lambda$1:66 - Marathan
+2024-10-03 18:11:40.806 [main] INFO  ActivityTest.lambda$1:66 - Ice Mixed Climbing
+2024-10-03 18:11:40.807 [main] INFO  ActivityTest.lambda$1:66 - Test Activity 1003 175144
+2024-10-03 18:11:40.807 [main] INFO  ActivityTest.lambda$1:66 - Test Activity 0930 173730
+2024-10-03 18:11:40.808 [main] INFO  ActivityTest.lambda$1:66 - Test Activity
+2024-10-03 18:11:40.809 [main] INFO  ActivityTest.lambda$1:66 - Paddling
+2024-10-03 18:11:40.809 [main] INFO  ActivityTest.lambda$1:66 - Test Acitivity 0927 105916
+2024-10-03 18:11:40.810 [main] INFO  ActivityTest.lambda$1:66 - Test Test Test Test Test Te
+2024-10-03 18:11:40.810 [main] INFO  ActivityTest.lambda$1:66 - Skiing
+2024-10-03 18:11:40.811 [main] INFO  ActivityTest.lambda$1:66 - Hunting
+2024-10-03 18:11:40.811 [main] INFO  ActivityTest.lambda$1:66 - Fishing
+2024-10-03 18:11:40.812 [main] INFO  ActivityTest.lambda$1:66 - Kiting
+2024-10-03 18:11:41.103 [main] INFO  ActivityTest.activity_createActivity:71 - Test Activity 1003 181140
+2024-10-03 18:11:56.837 [main] INFO  ActivityTest.activity_createActivity:89 - Activity created successfully!
+2024-10-03 18:11:57.085 [main] INFO  ActivityTest.testPassed:108 - PASS :: activity_createActivity
+2024-10-03 18:12:04.340 [main] INFO  ActivityTest.activity_searchActivity:116 - Activity Found
+2024-10-03 18:12:06.657 [main] INFO  ActivityTest.testPassed:108 - PASS :: activity_searchActivity
+2024-10-03 18:12:06.659 [main] INFO  ActivityTest.activity_updateActivity:145 - name of activity before update : Test Activity 1003 181140
+2024-10-03 18:12:52.850 [main] INFO  ActivityTest.activity_updateActivity:155 - Activity Found
+2024-10-03 18:16:06.231 [main] INFO  ActivityTest.activity_updateActivity:145 - name of activity before update : Test Activity 1003 181140
+2024-10-03 18:16:06.233 [main] INFO  ActivityTest.activity_updateActivity:146 - name of activity after update : Activity name updated
+2024-10-03 18:16:28.797 [main] ERROR ActivityTest.testException:122 - EXCEPTION :: java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "variables.ActivityVariables.list_searchActivity" is null
+2024-10-03 18:16:28.805 [main] INFO  ActivityTest.afterClass:47 - END :: ActivityTest 
+2024-10-03 18:17:07.318 [main] INFO  ActivityTest.beforeClass:40 - Start :: ActivityTest 
+2024-10-03 18:17:17.119 [main] INFO  WebDriverManager.resolveDriverVersion:1239 - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-03 18:17:17.189 [main] INFO  WebDriverManager.exportDriver:1301 - Exporting webdriver.chrome.driver as C:\Users\yamah022\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-03 18:17:21.100 [main] INFO  LoginTest.beforeClass:19 - Start :: Login Test 
+2024-10-03 18:17:26.821 [main] INFO  LoginTest.loginTest_invalidCredentials:38 - test@gearchecker.test, test1234
+2024-10-03 18:17:33.536 [main] INFO  LoginTest.testPassed:108 - PASS :: loginTest_invalidCredentials
+2024-10-03 18:17:37.489 [main] INFO  LoginTest.loginTest_validCredentials:65 - superadmin@gearchecker.test, 12345678
+2024-10-03 18:17:48.506 [main] INFO  LoginTest.testPassed:108 - PASS :: loginTest_validCredentials
+2024-10-03 18:17:48.509 [main] INFO  LoginTest.afterClass:24 - END :: Login Test 
+2024-10-03 18:17:48.512 [main] INFO  ActivityTest.beforeClass:40 - Start :: ActivityTest 
+2024-10-03 18:18:00.004 [main] INFO  ActivityTest.lambda$1:66 - Bbidhan Activity
+2024-10-03 18:18:00.005 [main] INFO  ActivityTest.lambda$1:66 - Test Acitivity 0930 102557
+2024-10-03 18:18:00.005 [main] INFO  ActivityTest.lambda$1:66 - Marathan
+2024-10-03 18:18:00.006 [main] INFO  ActivityTest.lambda$1:66 - Ice Mixed Climbing
+2024-10-03 18:18:00.006 [main] INFO  ActivityTest.lambda$1:66 - Test Activity 1003 175144
+2024-10-03 18:18:00.007 [main] INFO  ActivityTest.lambda$1:66 - Activity Name Updated
+2024-10-03 18:18:00.007 [main] INFO  ActivityTest.lambda$1:66 - Test Activity 0930 173730
+2024-10-03 18:18:00.008 [main] INFO  ActivityTest.lambda$1:66 - Test Activity
+2024-10-03 18:18:00.008 [main] INFO  ActivityTest.lambda$1:66 - Paddling
+2024-10-03 18:18:00.009 [main] INFO  ActivityTest.lambda$1:66 - Test Acitivity 0927 105916
+2024-10-03 18:18:00.010 [main] INFO  ActivityTest.lambda$1:66 - Test Test Test Test Test Te
+2024-10-03 18:18:00.011 [main] INFO  ActivityTest.lambda$1:66 - Skiing
+2024-10-03 18:18:00.011 [main] INFO  ActivityTest.lambda$1:66 - Hunting
+2024-10-03 18:18:00.012 [main] INFO  ActivityTest.lambda$1:66 - Fishing
+2024-10-03 18:18:00.013 [main] INFO  ActivityTest.lambda$1:66 - Kiting
+2024-10-03 18:18:00.317 [main] INFO  ActivityTest.activity_createActivity:71 - Test Activity 1003 181800
+2024-10-03 18:18:15.863 [main] INFO  ActivityTest.activity_createActivity:89 - Activity created successfully!
+2024-10-03 18:18:16.114 [main] INFO  ActivityTest.testPassed:108 - PASS :: activity_createActivity
+2024-10-03 18:18:23.757 [main] INFO  ActivityTest.activity_searchActivity:116 - Activity Found
+2024-10-03 18:18:26.029 [main] INFO  ActivityTest.testPassed:108 - PASS :: activity_searchActivity
+2024-10-03 18:18:26.031 [main] INFO  ActivityTest.activity_updateActivity:145 - name of activity before update : Test Activity 1003 181800
+2024-10-03 18:18:26.032 [main] INFO  ActivityTest.activity_updateActivity:146 - name of activity after update : Activity name updated
+2024-10-03 18:18:33.465 [main] INFO  ActivityTest.activity_updateActivity:156 - Activity Found
+2024-10-03 18:20:03.672 [main] INFO  ActivityTest.activity_updateActivity:184 - Test passed : Activity Update
+2024-10-03 18:20:04.219 [main] INFO  ActivityTest.testPassed:108 - PASS :: activity_updateActivity
+2024-10-03 18:20:04.220 [main] INFO  ActivityTest.afterClass:47 - END :: ActivityTest 
+2024-10-03 18:22:40.071 [main] INFO  WebDriverManager.resolveDriverVersion:1239 - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-03 18:22:40.146 [main] INFO  WebDriverManager.exportDriver:1301 - Exporting webdriver.chrome.driver as C:\Users\yamah022\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-03 18:22:45.037 [main] INFO  LoginTest.beforeClass:19 - Start :: Login Test 
+2024-10-03 18:22:50.580 [main] INFO  LoginTest.loginTest_invalidCredentials:38 - test@gearchecker.test, test1234
+2024-10-03 18:22:57.126 [main] INFO  LoginTest.testPassed:108 - PASS :: loginTest_invalidCredentials
+2024-10-03 18:23:00.796 [main] INFO  LoginTest.loginTest_validCredentials:65 - superadmin@gearchecker.test, 12345678
+2024-10-03 18:23:16.036 [main] INFO  LoginTest.testPassed:108 - PASS :: loginTest_validCredentials
+2024-10-03 18:23:16.038 [main] INFO  LoginTest.afterClass:24 - END :: Login Test 
+2024-10-03 18:23:16.041 [main] INFO  ActivityTest.beforeClass:40 - Start :: ActivityTest 
+2024-10-03 18:23:27.825 [main] INFO  ActivityTest.lambda$1:66 - Bbidhan Activity
+2024-10-03 18:23:27.825 [main] INFO  ActivityTest.lambda$1:66 - Test Acitivity 0930 102557
+2024-10-03 18:23:27.825 [main] INFO  ActivityTest.lambda$1:66 - Marathan
+2024-10-03 18:23:27.827 [main] INFO  ActivityTest.lambda$1:66 - Ice Mixed Climbing
+2024-10-03 18:23:27.827 [main] INFO  ActivityTest.lambda$1:66 - Test Activity 1003 175144
+2024-10-03 18:23:27.828 [main] INFO  ActivityTest.lambda$1:66 - Activity Name Updated
+2024-10-03 18:23:27.829 [main] INFO  ActivityTest.lambda$1:66 - Test Activity 1003 181800
+2024-10-03 18:23:27.830 [main] INFO  ActivityTest.lambda$1:66 - Test Activity 0930 173730
+2024-10-03 18:23:27.831 [main] INFO  ActivityTest.lambda$1:66 - Test Activity
+2024-10-03 18:23:27.831 [main] INFO  ActivityTest.lambda$1:66 - Paddling
+2024-10-03 18:23:27.832 [main] INFO  ActivityTest.lambda$1:66 - Test Acitivity 0927 105916
+2024-10-03 18:23:27.833 [main] INFO  ActivityTest.lambda$1:66 - Test Test Test Test Test Te
+2024-10-03 18:23:27.833 [main] INFO  ActivityTest.lambda$1:66 - Skiing
+2024-10-03 18:23:27.834 [main] INFO  ActivityTest.lambda$1:66 - Hunting
+2024-10-03 18:23:27.835 [main] INFO  ActivityTest.lambda$1:66 - Fishing
+2024-10-03 18:23:27.836 [main] INFO  ActivityTest.lambda$1:66 - Kiting
+2024-10-03 18:23:28.144 [main] INFO  ActivityTest.activity_createActivity:71 - Test Activity 1003 182327
+2024-10-03 18:23:43.819 [main] INFO  ActivityTest.activity_createActivity:89 - Activity created successfully!
+2024-10-03 18:23:44.041 [main] INFO  ActivityTest.testPassed:108 - PASS :: activity_createActivity
+2024-10-03 18:23:51.418 [main] INFO  ActivityTest.activity_searchActivity:116 - Activity Found
+2024-10-03 18:23:53.727 [main] INFO  ActivityTest.testPassed:108 - PASS :: activity_searchActivity
+2024-10-03 18:23:53.731 [main] INFO  ActivityTest.activity_updateActivity:145 - name of activity before update : Test Activity 1003 182327
+2024-10-03 18:23:53.731 [main] INFO  ActivityTest.activity_updateActivity:146 - name of activity after update : Activity name updated
+2024-10-03 18:24:01.019 [main] INFO  ActivityTest.activity_updateActivity:156 - Activity Found
+2024-10-03 18:24:16.665 [main] INFO  ActivityTest.activity_updateActivity:184 - Test passed : Activity Update
+2024-10-03 18:24:16.853 [main] INFO  ActivityTest.testPassed:108 - PASS :: activity_updateActivity
+2024-10-03 18:24:27.300 [main] ERROR ActivityTest.testException:122 - EXCEPTION :: java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "pageObjects.gearChecker_pageObjects.activity_button_addSubactivity()" is null
+2024-10-03 18:24:29.581 [main] INFO  ActivityTest.activity_deleteActivity:287 - Alert Text: Are you sure you want to make changes?
+2024-10-03 18:24:30.845 [main] INFO  ActivityTest.testPassed:108 - PASS :: activity_deleteActivity
+2024-10-03 18:24:30.847 [main] INFO  ActivityTest.afterClass:47 - END :: ActivityTest 
+2024-10-03 18:33:58.539 [main] INFO  WebDriverManager.resolveDriverVersion:1239 - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-03 18:33:58.655 [main] INFO  WebDriverManager.exportDriver:1301 - Exporting webdriver.chrome.driver as C:\Users\yamah022\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-03 18:34:03.928 [main] INFO  LoginTest.beforeClass:19 - Start :: Login Test 
+2024-10-03 18:34:13.578 [main] INFO  LoginTest.loginTest_invalidCredentials:38 - test@gearchecker.test, test1234
+2024-10-03 18:34:20.911 [main] INFO  LoginTest.testPassed:108 - PASS :: loginTest_invalidCredentials
+2024-10-03 18:34:25.344 [main] INFO  LoginTest.loginTest_validCredentials:65 - superadmin@gearchecker.test, 12345678
+2024-10-03 18:34:34.300 [main] INFO  LoginTest.testPassed:108 - PASS :: loginTest_validCredentials
+2024-10-03 18:34:34.303 [main] INFO  LoginTest.afterClass:24 - END :: Login Test 
+2024-10-03 18:34:34.306 [main] INFO  ActivityTest.beforeClass:40 - Start :: ActivityTest 
+2024-10-03 18:34:48.562 [main] INFO  ActivityTest.lambda$1:66 - Bbidhan Activity
+2024-10-03 18:34:48.564 [main] INFO  ActivityTest.lambda$1:66 - Test Acitivity 0930 102557
+2024-10-03 18:34:48.565 [main] INFO  ActivityTest.lambda$1:66 - Marathan
+2024-10-03 18:34:48.566 [main] INFO  ActivityTest.lambda$1:66 - Ice Mixed Climbing
+2024-10-03 18:34:48.567 [main] INFO  ActivityTest.lambda$1:66 - Test Activity 1003 175144
+2024-10-03 18:34:48.567 [main] INFO  ActivityTest.lambda$1:66 - Test Activity 1003 182327
+2024-10-03 18:34:48.569 [main] INFO  ActivityTest.lambda$1:66 - Test Activity 1003 181800
+2024-10-03 18:34:48.569 [main] INFO  ActivityTest.lambda$1:66 - Test Activity 0930 173730
+2024-10-03 18:34:48.570 [main] INFO  ActivityTest.lambda$1:66 - Test Activity
+2024-10-03 18:34:48.571 [main] INFO  ActivityTest.lambda$1:66 - Paddling
+2024-10-03 18:34:48.572 [main] INFO  ActivityTest.lambda$1:66 - Test 3432
+2024-10-03 18:34:48.573 [main] INFO  ActivityTest.lambda$1:66 - Test Test Test Test Test Te
+2024-10-03 18:34:48.575 [main] INFO  ActivityTest.lambda$1:66 - Skiing
+2024-10-03 18:34:48.576 [main] INFO  ActivityTest.lambda$1:66 - Hunting
+2024-10-03 18:34:48.577 [main] INFO  ActivityTest.lambda$1:66 - Fishing
+2024-10-03 18:34:48.578 [main] INFO  ActivityTest.lambda$1:66 - Kiting
+2024-10-03 18:34:49.102 [main] INFO  ActivityTest.activity_createActivity:71 - Test Activity 1003 183448
+2024-10-03 18:35:05.665 [main] INFO  ActivityTest.activity_createActivity:89 - Activity created successfully!
+2024-10-03 18:35:06.254 [main] INFO  ActivityTest.testPassed:108 - PASS :: activity_createActivity
+2024-10-03 18:35:13.991 [main] INFO  ActivityTest.activity_searchActivity:116 - Activity Found
+2024-10-03 18:35:16.489 [main] INFO  ActivityTest.testPassed:108 - PASS :: activity_searchActivity
+2024-10-03 18:35:16.492 [main] INFO  ActivityTest.activity_updateActivity:145 - name of activity before update : Test Activity 1003 183448
+2024-10-03 18:35:16.492 [main] INFO  ActivityTest.activity_updateActivity:146 - name of activity after update : Activity name updated
+2024-10-03 18:35:23.889 [main] INFO  ActivityTest.activity_updateActivity:156 - Activity Found
+2024-10-03 18:35:38.507 [main] INFO  ActivityTest.activity_updateActivity:184 - Activity Found
+2024-10-03 18:35:38.565 [main] INFO  ActivityTest.activity_updateActivity:186 - Activity Name Updated
+2024-10-03 18:35:40.757 [main] INFO  ActivityTest.activity_updateActivity:190 - Test passed : Activity Update
+2024-10-03 18:35:41.029 [main] INFO  ActivityTest.testPassed:108 - PASS :: activity_updateActivity
+2024-10-03 18:36:03.072 [main] INFO  ActivityTest.testPassed:108 - PASS :: activity_createSubActivity
+2024-10-03 18:36:05.548 [main] INFO  ActivityTest.activity_deleteActivity:296 - Alert Text: Are you sure you want to make changes?
+2024-10-03 18:36:07.316 [main] INFO  ActivityTest.testPassed:108 - PASS :: activity_deleteActivity
+2024-10-03 18:36:07.318 [main] INFO  ActivityTest.afterClass:47 - END :: ActivityTest 
+2024-10-03 18:55:22.932 [main] INFO  WebDriverManager.resolveDriverVersion:1239 - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-03 18:55:22.998 [main] INFO  WebDriverManager.exportDriver:1301 - Exporting webdriver.chrome.driver as C:\Users\yamah022\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-03 18:55:27.835 [main] INFO  LoginTest.beforeClass:19 - Start :: Login Test 
+2024-10-03 18:55:35.265 [main] INFO  LoginTest.loginTest_invalidCredentials:38 - test@gearchecker.test, test1234
+2024-10-03 18:55:42.130 [main] INFO  LoginTest.testPassed:108 - PASS :: loginTest_invalidCredentials
+2024-10-03 18:55:46.267 [main] INFO  LoginTest.loginTest_validCredentials:65 - superadmin@gearchecker.test, 12345678
+2024-10-03 18:55:55.989 [main] INFO  LoginTest.testPassed:108 - PASS :: loginTest_validCredentials
+2024-10-03 18:55:55.991 [main] INFO  LoginTest.afterClass:24 - END :: Login Test 
+2024-10-03 18:55:55.998 [main] INFO  ActivityTest.beforeClass:40 - Start :: ActivityTest 
+2024-10-03 18:56:07.739 [main] INFO  ActivityTest.activity_createActivity:62 - LIST OF ACTIVITIES :: 
+2024-10-03 18:56:07.990 [main] INFO  ActivityTest.lambda$1:67 - Bbidhan Activity
+2024-10-03 18:56:07.990 [main] INFO  ActivityTest.lambda$1:67 - Marathan
+2024-10-03 18:56:07.991 [main] INFO  ActivityTest.lambda$1:67 - Ice Mixed Climbing
+2024-10-03 18:56:07.992 [main] INFO  ActivityTest.lambda$1:67 - Test Activity
+2024-10-03 18:56:07.992 [main] INFO  ActivityTest.lambda$1:67 - Paddling
+2024-10-03 18:56:07.993 [main] INFO  ActivityTest.lambda$1:67 - Skiing
+2024-10-03 18:56:07.993 [main] INFO  ActivityTest.lambda$1:67 - Hunting
+2024-10-03 18:56:07.994 [main] INFO  ActivityTest.lambda$1:67 - Fishing
+2024-10-03 18:56:07.994 [main] INFO  ActivityTest.lambda$1:67 - Kiting
+2024-10-03 18:56:08.278 [main] INFO  ActivityTest.activity_createActivity:72 - Test Activity 1003 185607
+2024-10-03 18:56:23.927 [main] INFO  ActivityTest.activity_createActivity:90 - Activity created successfully!
+2024-10-03 18:56:24.158 [main] INFO  ActivityTest.testPassed:108 - PASS :: activity_createActivity
+2024-10-03 18:56:31.301 [main] INFO  ActivityTest.activity_searchActivity:117 - Activity Found
+2024-10-03 18:56:33.579 [main] INFO  ActivityTest.testPassed:108 - PASS :: activity_searchActivity
+2024-10-03 18:56:33.580 [main] INFO  ActivityTest.activity_updateActivity:146 - name of activity before update : Test Activity 1003 185607
+2024-10-03 18:56:33.581 [main] INFO  ActivityTest.activity_updateActivity:147 - name of activity after update : Activity name updated
+2024-10-03 18:56:40.762 [main] INFO  ActivityTest.activity_updateActivity:157 - Activity Found
+2024-10-03 18:56:54.668 [main] INFO  ActivityTest.activity_updateActivity:184 - Activity Found
+2024-10-03 18:56:54.688 [main] INFO  ActivityTest.activity_updateActivity:186 - Activity Name Updated
+2024-10-03 18:56:56.787 [main] INFO  ActivityTest.activity_updateActivity:190 - Test passed : Activity Update
+2024-10-03 18:56:56.967 [main] INFO  ActivityTest.testPassed:108 - PASS :: activity_updateActivity
+2024-10-03 18:57:18.271 [main] INFO  ActivityTest.testPassed:108 - PASS :: activity_createSubActivity
+2024-10-03 18:57:20.615 [main] INFO  ActivityTest.activity_deleteActivity:289 - Alert Text: Are you sure you want to make changes?
+2024-10-03 18:57:22.610 [main] INFO  ActivityTest.testPassed:108 - PASS :: activity_deleteActivity
+2024-10-03 18:57:22.611 [main] INFO  ActivityTest.afterClass:47 - END :: ActivityTest 
+2024-10-03 18:57:22.614 [main] INFO  AdventureTest.beforeClass:22 - Start :: AdventureTest 
+2024-10-03 18:57:47.012 [main] INFO  AdventureTest.adventure_createAdventure:52 - Test Adventure 1003 185741
+2024-10-03 18:57:47.013 [main] INFO  AdventureTest.adventure_createAdventure:55 - activities : 2
+2024-10-03 18:58:22.120 [main] INFO  AdventureTest.adventure_createAdventure:104 - https://uat.gearchecker.io/admin/adventures
+2024-10-03 18:58:22.443 [main] INFO  AdventureTest.testPassed:108 - PASS :: adventure_createAdventure
+2024-10-03 18:58:31.710 [main] INFO  AdventureTest.adventure_searchAdventure:140 - [[[ChromeDriver: chrome on windows (0672aee73422801da918be05d3fde534)] -> xpath: //body[1]/div[1]/div[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[4]/div]]
+2024-10-03 18:58:31.711 [main] INFO  AdventureTest.adventure_searchAdventure:142 - Adventure Found
+2024-10-03 18:58:31.744 [main] INFO  AdventureTest.adventure_searchAdventure:144 - Test Adventure...
+2024-10-03 18:58:33.994 [main] INFO  AdventureTest.testPassed:108 - PASS :: adventure_searchAdventure
+2024-10-03 18:58:38.790 [main] INFO  AdventureTest.testPassed:108 - PASS :: adventure_viewAdventure
+2024-10-03 18:58:42.564 [main] INFO  AdventureTest.adventure_deleteAdventure:200 - Alert Text: Are you sure you want to make changes?
+2024-10-03 18:58:43.745 [main] INFO  AdventureTest.adventure_deleteAdventure:208 - adventure deleted successfully
+2024-10-03 18:58:44.263 [main] INFO  AdventureTest.testPassed:108 - PASS :: adventure_deleteAdventure
+2024-10-03 18:58:44.265 [main] INFO  AdventureTest.afterClass:28 - END :: AdventureTest 
+2024-10-03 18:58:44.268 [main] INFO  GearlistTest.beforeClass:26 - Start :: GearlistTest 
+2024-10-03 18:58:58.870 [main] INFO  GearlistTest.gearlist_createGearlist:50 - Adventures : [Select Adventure, Mountain Flight Rajeev, Andean Summit Expedition, Greenland Crossing, Mt. Everest, Mt. Kilimanjaro, Norge på Langs, Patagonian Wilds Expedition, Sahara Dunes Odyssey, Test Adventure 0927 155354, Test Adventure 0930 123036, Test Adventure 1, Tilicho Lake Trek, Tso Rolpa Trek]
+2024-10-03 18:58:59.742 [main] INFO  GearlistTest.gearlist_createGearlist:55 - Activities : [Select Activity, Test Activity]
+2024-10-03 18:59:00.799 [main] INFO  GearlistTest.gearlist_createGearlist:60 - Sub Activities : [Select Subactivity, Test Sub Activity 1, Test Sub Activity 2, Test Sub Activity 3]
+2024-10-03 18:59:01.938 [main] INFO  GearlistTest.gearlist_createGearlist:65 - User : [Select User, Bellis Strut, Bidhan Marasine, Bikas Gurung, Henry Cahlid, john carter, Lamichhane Vai Test, Norges Paulo, Rajeev Lamichhane, Rajeev Lamichhane, Test User, Tester, User]
+2024-10-03 18:59:06.420 [main] INFO  GearlistTest.gearlist_createGearlist:74 - Count of categories: 5
+2024-10-03 18:59:06.449 [main] INFO  GearlistTest.lambda$0:75 - Storage
+2024-10-03 18:59:06.472 [main] INFO  GearlistTest.lambda$0:75 - Head
+2024-10-03 18:59:06.494 [main] INFO  GearlistTest.lambda$0:75 - Upper Body
+2024-10-03 18:59:06.517 [main] INFO  GearlistTest.lambda$0:75 - Lower Body
+2024-10-03 18:59:06.535 [main] INFO  GearlistTest.lambda$0:75 - Technical
+2024-10-03 18:59:07.669 [main] INFO  GearlistTest.gearlist_createGearlist:83 - Count of subcategories: 1
+2024-10-03 18:59:07.702 [main] INFO  GearlistTest.lambda$1:84 - Travel Bag
++
+2024-10-03 18:59:19.116 [main] ERROR GearlistTest.testException:122 - EXCEPTION :: java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "products" is null
+2024-10-03 18:59:29.603 [main] ERROR GearlistTest.testException:122 - EXCEPTION :: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=129.0.6668.89)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0672aee73422801da918be05d3fde534, clickElement {id=f.0E2E9166676697ADACB2402733C8D31D.d.47EF78159B52BB923C5773213E86890D.e.2852}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.89, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\yamah022\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51731}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51731/devtoo..., se:cdpVersion: 129.0.6668.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (0672aee73422801da918be05d3fde534)] -> xpath: //p[normalize-space()='Gear List']]
+Session ID: 0672aee73422801da918be05d3fde534
+2024-10-03 18:59:29.605 [main] INFO  GearlistTest.afterClass:32 - END :: GearlistTest 
+2024-10-03 19:03:51.299 [main] INFO  WebDriverManager.resolveDriverVersion:1239 - Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-03 19:03:51.445 [main] INFO  WebDriverManager.exportDriver:1301 - Exporting webdriver.chrome.driver as C:\Users\yamah022\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-03 19:03:58.316 [main] INFO  LoginTest.beforeClass:19 - Start :: Login Test 
+2024-10-03 19:04:05.731 [main] INFO  LoginTest.loginTest_invalidCredentials:38 - test@gearchecker.test, test1234
+2024-10-03 19:04:13.088 [main] INFO  LoginTest.testPassed:108 - PASS :: loginTest_invalidCredentials
+2024-10-03 19:04:18.558 [main] INFO  LoginTest.loginTest_validCredentials:65 - superadmin@gearchecker.test, 12345678
+2024-10-03 19:04:28.333 [main] INFO  LoginTest.testPassed:108 - PASS :: loginTest_validCredentials
+2024-10-03 19:04:28.336 [main] INFO  LoginTest.afterClass:24 - END :: Login Test 
+2024-10-03 19:04:28.339 [main] INFO  ActivityTest.beforeClass:40 - Start :: ActivityTest 
+2024-10-03 19:04:40.053 [main] INFO  ActivityTest.activity_createActivity:62 - LIST OF ACTIVITIES :: 
+2024-10-03 19:04:40.379 [main] INFO  ActivityTest.lambda$1:67 - Bbidhan Activity
+2024-10-03 19:04:40.380 [main] INFO  ActivityTest.lambda$1:67 - Marathan
+2024-10-03 19:04:40.381 [main] INFO  ActivityTest.lambda$1:67 - Ice Mixed Climbing
+2024-10-03 19:04:40.382 [main] INFO  ActivityTest.lambda$1:67 - Test Activity
+2024-10-03 19:04:40.383 [main] INFO  ActivityTest.lambda$1:67 - Paddling
+2024-10-03 19:04:40.384 [main] INFO  ActivityTest.lambda$1:67 - Skiing
+2024-10-03 19:04:40.384 [main] INFO  ActivityTest.lambda$1:67 - Hunting
+2024-10-03 19:04:40.385 [main] INFO  ActivityTest.lambda$1:67 - Fishing
+2024-10-03 19:04:40.386 [main] INFO  ActivityTest.lambda$1:67 - Kiting
+2024-10-03 19:04:40.710 [main] INFO  ActivityTest.activity_createActivity:72 - Test Activity 1003 190440
+2024-10-03 19:04:56.546 [main] INFO  ActivityTest.activity_createActivity:90 - Activity created successfully!
+2024-10-03 19:04:56.881 [main] INFO  ActivityTest.testPassed:108 - PASS :: activity_createActivity
+2024-10-03 19:05:04.794 [main] INFO  ActivityTest.activity_searchActivity:117 - Activity Found
+2024-10-03 19:05:07.222 [main] INFO  ActivityTest.testPassed:108 - PASS :: activity_searchActivity
+2024-10-03 19:05:07.224 [main] INFO  ActivityTest.activity_updateActivity:146 - name of activity before update : Test Activity 1003 190440
+2024-10-03 19:05:07.225 [main] INFO  ActivityTest.activity_updateActivity:147 - name of activity after update : Activity name updated
+2024-10-03 19:05:14.681 [main] INFO  ActivityTest.activity_updateActivity:157 - Activity Found
+2024-10-03 19:05:28.086 [main] INFO  ActivityTest.activity_updateActivity:184 - Activity Found
+2024-10-03 19:05:28.101 [main] INFO  ActivityTest.activity_updateActivity:186 - Activity Name Updated
+2024-10-03 19:05:30.385 [main] INFO  ActivityTest.activity_updateActivity:190 - Test passed : Activity Update
+2024-10-03 19:05:30.524 [main] INFO  ActivityTest.testPassed:108 - PASS :: activity_updateActivity
+2024-10-03 19:05:50.998 [main] INFO  ActivityTest.testPassed:108 - PASS :: activity_createSubActivity
+2024-10-03 19:05:53.147 [main] INFO  ActivityTest.activity_deleteActivity:289 - Alert Text: Are you sure you want to make changes?
+2024-10-03 19:05:54.261 [main] INFO  ActivityTest.testPassed:108 - PASS :: activity_deleteActivity
+2024-10-03 19:05:54.275 [main] INFO  ActivityTest.afterClass:47 - END :: ActivityTest 
+2024-10-03 19:05:54.279 [main] INFO  AdventureTest.beforeClass:22 - Start :: AdventureTest 
+2024-10-03 19:06:17.261 [main] INFO  AdventureTest.adventure_createAdventure:52 - Test Adventure 1003 190611
+2024-10-03 19:06:17.261 [main] INFO  AdventureTest.adventure_createAdventure:55 - activities : 2
+2024-10-03 19:06:47.360 [main] INFO  AdventureTest.adventure_createAdventure:104 - https://uat.gearchecker.io/admin/adventures
+2024-10-03 19:06:47.561 [main] INFO  AdventureTest.testPassed:108 - PASS :: adventure_createAdventure
+2024-10-03 19:06:56.718 [main] INFO  AdventureTest.adventure_searchAdventure:140 - [[[ChromeDriver: chrome on windows (f5bd7cf06931a0304c723f25982066b8)] -> xpath: //body[1]/div[1]/div[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[4]/div]]
+2024-10-03 19:06:56.719 [main] INFO  AdventureTest.adventure_searchAdventure:142 - Adventure Found
+2024-10-03 19:06:56.738 [main] INFO  AdventureTest.adventure_searchAdventure:144 - Test Adventure...
+2024-10-03 19:06:58.895 [main] INFO  AdventureTest.testPassed:108 - PASS :: adventure_searchAdventure
+2024-10-03 19:07:03.312 [main] INFO  AdventureTest.testPassed:108 - PASS :: adventure_viewAdventure
+2024-10-03 19:07:06.843 [main] INFO  AdventureTest.adventure_deleteAdventure:200 - Alert Text: Are you sure you want to make changes?
+2024-10-03 19:07:07.885 [main] INFO  AdventureTest.adventure_deleteAdventure:208 - adventure deleted successfully
+2024-10-03 19:07:08.051 [main] INFO  AdventureTest.testPassed:108 - PASS :: adventure_deleteAdventure
+2024-10-03 19:07:08.052 [main] INFO  AdventureTest.afterClass:28 - END :: AdventureTest 
+2024-10-03 19:07:08.053 [main] INFO  GearlistTest.beforeClass:26 - Start :: GearlistTest 
+2024-10-03 19:07:48.401 [main] INFO  GearlistTest.gearlist_createGearlist:50 - Adventures : [Select Adventure, Mountain Flight Rajeev, Andean Summit Expedition, Greenland Crossing, Mt. Everest, Mt. Kilimanjaro, Norge på Langs, Patagonian Wilds Expedition, Sahara Dunes Odyssey, Test Adventure 0927 155354, Test Adventure 0930 123036, Test Adventure 1, Tilicho Lake Trek, Tso Rolpa Trek]
+2024-10-03 19:07:49.169 [main] INFO  GearlistTest.gearlist_createGearlist:55 - Activities : [Select Activity, Test Activity]
+2024-10-03 19:07:49.873 [main] INFO  GearlistTest.gearlist_createGearlist:60 - Sub Activities : [Select Subactivity, Test Sub Activity 1, Test Sub Activity 2, Test Sub Activity 3]
+2024-10-03 19:07:50.667 [main] INFO  GearlistTest.gearlist_createGearlist:65 - User : [Select User, Bellis Strut, Bidhan Marasine, Bikas Gurung, Henry Cahlid, john carter, Lamichhane Vai Test, Norges Paulo, Rajeev Lamichhane, Rajeev Lamichhane, Test User, Tester, User]
+2024-10-03 19:07:54.861 [main] INFO  GearlistTest.gearlist_createGearlist:74 - Count of categories: 5
+2024-10-03 19:07:54.876 [main] INFO  GearlistTest.lambda$0:75 - Storage
+2024-10-03 19:07:54.897 [main] INFO  GearlistTest.lambda$0:75 - Head
+2024-10-03 19:07:54.909 [main] INFO  GearlistTest.lambda$0:75 - Upper Body
+2024-10-03 19:07:54.921 [main] INFO  GearlistTest.lambda$0:75 - Lower Body
+2024-10-03 19:07:54.931 [main] INFO  GearlistTest.lambda$0:75 - Technical
+2024-10-03 19:07:56.004 [main] INFO  GearlistTest.gearlist_createGearlist:83 - Count of subcategories: 1
+2024-10-03 19:07:56.017 [main] INFO  GearlistTest.lambda$1:84 - Travel Bag
++
+2024-10-03 19:08:07.280 [main] ERROR GearlistTest.testException:122 - EXCEPTION :: java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "products" is null
+2024-10-03 19:08:17.510 [main] ERROR GearlistTest.testException:122 - EXCEPTION :: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=129.0.6668.89)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f5bd7cf06931a0304c723f25982066b8, clickElement {id=f.F878FE8265EAC85AF331E5F8B8250E12.d.C297DE57E5F08FED5DA353F27CE8F730.e.2937}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.89, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\yamah022\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52305}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52305/devtoo..., se:cdpVersion: 129.0.6668.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f5bd7cf06931a0304c723f25982066b8)] -> xpath: //p[normalize-space()='Gear List']]
+Session ID: f5bd7cf06931a0304c723f25982066b8
+2024-10-03 19:08:17.513 [main] INFO  GearlistTest.afterClass:32 - END :: GearlistTest 

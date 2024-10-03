@@ -9,7 +9,7 @@ import utilities.UtilBase;
 
 public class Setup extends UtilBase {
 
-	@BeforeClass
+	@BeforeClass (alwaysRun = true)
 	public static void setup() {
 		try {
 			initialiseDriver();
